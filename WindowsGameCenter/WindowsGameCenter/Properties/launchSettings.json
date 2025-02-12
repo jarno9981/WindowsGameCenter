@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "WindowsGameCenter (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "WindowsGameCenter (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
