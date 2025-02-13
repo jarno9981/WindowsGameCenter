@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<local:CustomWindow
+    x:Class="GameCenter.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GameCenter"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:helper="using:GameCenter.Helpers"
+    Title="GameCenter">
+    <Window.SystemBackdrop>
+        <MicaBackdrop Kind="BaseAlt"/>
+    </Window.SystemBackdrop>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Windows 11 Wave Background -->
+        <Image Source="ms-appx:///Assets/wg-background.png" 
+               Stretch="UniformToFill" 
+               Opacity="0.8"
+               Grid.RowSpan="2"/>
+
+        <!-- Custom Titlebar -->
+        <Grid x:Name="AppTitleBar" 
+              Height="48"
+              Margin="0,0,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Orientation="Horizontal" 
+                       Margin="12,0,0,0"
+                       Spacing="12">
+                <Image Source="ms-appx:///Assets/games.png"
+                       Height="24" Width="24"/>
+                <TextBlock Text="Game Center"
+                         VerticalAlignment="Center"
+                         Style="{StaticResource CaptionTextBlockStyle}"/>
+            </StackPanel>
+
+            <StackPanel Grid.Column="2" 
+                       Orientation="Horizontal" 
+                       Margin="0,0,12,0"
+                       Spacing="24">
+                <Button x:Name="SearchButton" 
+                        Background="Transparent" 
+                        BorderThickness="0"
+                        Padding="0"
+                        >
+                    <FontIcon Glyph="&#xE721;"/>
+                    <Button.Flyout>
+                        <Flyout x:Name="SearchFlyout" Placement="Bottom">
+                            <Flyout.FlyoutPresenterStyle>
+                                <Style TargetType="FlyoutPresenter" BasedOn="{StaticResource AnimatedFlyoutPresenterStyle}">
+                                    <Setter Property="CornerRadius" Value="10"/>
+                                    <Setter Property="MinWidth" Value="300"/>
+                                    <Setter Property="MaxHeight" Value="400"/>
+                                </Style>
+                            </Flyout.FlyoutPresenterStyle>
+                            <StackPanel>
+                                <TextBox x:Name="SearchBox" 
+                                         PlaceholderText="Search games or launchers..."
+                                         
+                                         Margin="0,0,0,10"/>
+                                <ListView x:Name="GameListView" 
+                                          SelectionMode="None"
+                                          IsItemClickEnabled="False">
+                                    <ListView.ItemTemplate>
+                                        <DataTemplate x:DataType="helper:Game">
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                </Grid.ColumnDefinitions>
+                                                <StackPanel>
+                                                    <TextBlock Text="{x:Bind Title}" 
+                                                               Style="{ThemeResource BodyTextBlockStyle}"/>
+                                                    <TextBlock Text="{x:Bind Launcher}" 
+                                                               Style="{ThemeResource CaptionTextBlockStyle}"
+                                                               Opacity="0.6"/>
+                                                </StackPanel>
+                                                <Button Grid.Column="1" 
+                                                        Tag="{x:Bind}"
+                                                        Width="32"
+                                                        Height="32"
+                                                        Padding="0"
+                                                        Background="Transparent">
+                                                    <FontIcon Glyph="&#xE768;" FontSize="16"/>
+                                                </Button>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </ListView.ItemTemplate>
+                                </ListView>
+                            </StackPanel>
+                        </Flyout>
+                    </Button.Flyout>
+                </Button>
+
+                <Button x:Name="NetworkButton" 
+                        Background="Transparent" 
+                        BorderBrush="Transparent"
+                        BorderThickness="0"
+                        Padding="0"
+                        Width="32"
+                        Height="32"
+                        CornerRadius="0"
+                       >
+                    <FontIcon x:Name="NetworkIcon" Glyph="&#xE701;" FontSize="16"/>
+                    <Button.Flyout>
+                        <Flyout x:Name="NetworkFlyout" Placement="Bottom">
+                            <Flyout.FlyoutPresenterStyle>
+                                <Style TargetType="FlyoutPresenter" BasedOn="{StaticResource AnimatedFlyoutPresenterStyle}">
+                                    <Setter Property="CornerRadius" Value="10"/>
+                                </Style>
+                            </Flyout.FlyoutPresenterStyle>
+                            <StackPanel Width="300">
+                                <TextBlock x:Name="DeviceNameText" Style="{ThemeResource BodyTextBlockStyle}"/>
+                                <TextBlock x:Name="IpAddressText" Style="{ThemeResource BodyTextBlockStyle}" Margin="0,4,0,0"/>
+                                <Grid x:Name="SpeedGraph" Height="100" Margin="0,16,0,0">
+                                    <Rectangle Fill="{ThemeResource SystemControlBackgroundAltHighBrush}" />
+                                    <Polyline x:Name="UploadSpeedLine" Stroke="Green" StrokeThickness="2"/>
+                                    <Polyline x:Name="DownloadSpeedLine" Stroke="Blue" StrokeThickness="2"/>
+                                </Grid>
+                                <StackPanel Orientation="Horizontal" Margin="0,8,0,0">
+                                    <TextBlock Text="Upload: " Style="{ThemeResource CaptionTextBlockStyle}"/>
+                                    <TextBlock x:Name="UploadSpeedText" Style="{ThemeResource CaptionTextBlockStyle}"/>
+                                    <TextBlock Text="Download: " Style="{ThemeResource CaptionTextBlockStyle}" Margin="16,0,0,0"/>
+                                    <TextBlock x:Name="DownloadSpeedText" Style="{ThemeResource CaptionTextBlockStyle}"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Flyout>
+                    </Button.Flyout>
+                </Button>
+
+                <Button x:Name="VolumeButton" 
+                        Background="Transparent" 
+                        BorderThickness="0"
+                        Padding="0"
+                        >
+                    <FontIcon Glyph="&#xE767;"/>
+                    <Button.Flyout>
+                        <Flyout x:Name="VolumeFlyout" Placement="Bottom">
+                            <Flyout.FlyoutPresenterStyle>
+                                <Style TargetType="FlyoutPresenter" BasedOn="{StaticResource AnimatedFlyoutPresenterStyle}"/>
+                            </Flyout.FlyoutPresenterStyle>
+                            <StackPanel Width="250">
+                                <Slider x:Name="VolumeSlider" 
+                                        Minimum="0" 
+                                        Maximum="100" 
+                                        Value="50"/>
+                                <ComboBox x:Name="AudioSourceComboBox" 
+                                          Header="Audio Source" 
+                                          Margin="0,12,0,0"
+                                          />
+                            </StackPanel>
+                        </Flyout>
+                    </Button.Flyout>
+                </Button>
+
+                <TextBlock x:Name="TimeDisplay" Width="50" 
+                           VerticalAlignment="Center" Text="{x:Bind _currentTime}"/>
+
+                <Button x:Name="CloseButton"
+                        Width="32" Height="32"
+                        Style="{StaticResource CaptionButtonStyle}"
+                        Margin="0,0,0,0"
+                        Click="CloseButton_Click">
+                    <FontIcon Glyph="&#xE106;" FontSize="16"/>
+                </Button>
+            </StackPanel>
+        </Grid>
+
+        <!-- Main Content Area -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Navigation View -->
+            <NavigationView x:Name="NavView"
+                            PaneDisplayMode="LeftCompact"
+                            IsSettingsVisible="False"
+                            IsBackButtonVisible="Collapsed"
+                            OpenPaneLength="50"
+                            CompactPaneLength="48"
+                            Width="Auto"
+                            IsPaneToggleButtonVisible="False"
+                            SelectionChanged="NavView_SelectionChanged"
+                            ItemInvoked="NavView_ItemInvoked">
+                <NavigationView.MenuItems>
+                    <NavigationViewItem Content="Games" Tag="Games" IsSelected="True">
+                        <NavigationViewItem.Icon>
+                            <FontIcon Glyph="&#xE7FC;"/>
+                        </NavigationViewItem.Icon>
+                    </NavigationViewItem>
+                    <NavigationViewItem Content="Friends" Tag="Friends">
+                        <NavigationViewItem.Icon>
+                            <FontIcon Glyph="&#xE779;"/>
+                        </NavigationViewItem.Icon>
+                    </NavigationViewItem>
+                </NavigationView.MenuItems>
+                <NavigationView.PaneFooter>
+                    <StackPanel Orientation="Vertical">
+                        <Button x:Name="AccountButton" Background="Transparent" BorderBrush="Transparent">
+                            <Button.Content >
+                                <PersonPicture Width="24" Height="32" ProfilePicture="ms-appx:///Assets/default.png"/>
+                            </Button.Content>
+                            <Button.Flyout>
+                                <Flyout>
+                                    <StackPanel>
+                                        <TextBlock Text="Connect Gaming Accounts" FontWeight="Bold" Margin="0,0,0,10"/>
+                                        <Button Background="Transparent" BorderBrush="Transparent" Margin="0,0,0,5">
+                                            <StackPanel Orientation="Horizontal" Spacing="8">
+                                                <Image Source="ms-appx:///Assets/PlatformIcons/steam.png" Width="24" Height="24"/>
+                                                <TextBlock Text="Connect Steam Account" VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </Button>
+
+                                        <Button Background="Transparent" BorderBrush="Transparent" Margin="0,0,0,5">
+                                            <StackPanel Orientation="Horizontal" Spacing="8">
+                                                <Image Source="ms-appx:///Assets/PlatformIcons/Epic Games.png" Width="24" Height="24"/>
+                                                <TextBlock Text="Connect Epic Games Account" VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </Button>
+
+                                        <Button Background="Transparent" BorderBrush="Transparent" Margin="0,0,0,5">
+                                            <StackPanel Orientation="Horizontal" Spacing="8">
+                                                <Image Source="ms-appx:///Assets/PlatformIcons/ubisoft.png" Width="24" Height="24"/>
+                                                <TextBlock Text="Connect Ubisoft Account" VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </Button>
+
+                                        <Button Background="Transparent" BorderBrush="Transparent" Margin="0,0,0,5">
+                                            <StackPanel Orientation="Horizontal" Spacing="8">
+                                                <Image Source="ms-appx:///Assets/PlatformIcons/xbox.png" Width="24" Height="24"/>
+                                                <TextBlock Text="Connect Xbox Account" VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </Button>
+
+                                        <Button Background="Transparent" BorderBrush="Transparent" Margin="0,0,0,5">
+                                            <StackPanel Orientation="Horizontal" Spacing="8">
+                                                <Image Source="ms-appx:///Assets/PlatformIcons/Rockstar Social Club.png" Width="24" Height="24"/>
+                                                <TextBlock Text="Connect Rockstar Account" VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </Button>
+
+                                        <Button Background="Transparent" BorderBrush="Transparent" Margin="0,0,0,5">
+                                            <StackPanel Orientation="Horizontal" Spacing="8">
+                                                <Image Source="ms-appx:///Assets/PlatformIcons/PlayStation.png" Width="24" Height="24"/>
+                                                <TextBlock Text="Connect Playstation Account" VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </Button>
+                                    </StackPanel>
+                                </Flyout>
+                            </Button.Flyout>
+                        </Button>
+                        <Button Background="Transparent" BorderThickness="0" Margin="3,3,3,3">
+                            <Button.Content >
+                                <FontIcon Glyph="&#xE713;"/>
+                            </Button.Content>
+                        </Button>
+                        <Button  Background="Transparent" BorderThickness="0" Margin="3,3,3,3">
+                            <Button.Content >
+                                <FontIcon Glyph="&#xE7E8;"/>
+                            </Button.Content>
+                            <Button.Flyout>
+                                <Flyout>
+                                    <StackPanel>
+                                        <Button Click="RestartWindows_Click"  Width="200" Margin="0,0,0,5">
+                                            <StackPanel Orientation="Horizontal">
+                                                <FontIcon Glyph="&#xE777;" Margin="0,0,8,0"/>
+                                                <TextBlock Text="Restart Windows"/>
+                                            </StackPanel>
+                                        </Button>
+                                        <Button  Width="200" Click="ShutdownWindows_Click">
+                                            <StackPanel Orientation="Horizontal">
+                                                <FontIcon Glyph="&#xE7E8;" Margin="0,0,8,0"/>
+                                                <TextBlock Text="Shutdown Windows"/>
+                                            </StackPanel>
+                                        </Button>
+                                    </StackPanel>
+                                </Flyout>
+                            </Button.Flyout>
+                        </Button>
+                    </StackPanel>
+                </NavigationView.PaneFooter>
+            </NavigationView>
+
+            <!-- Frame for content -->
+            <!-- Frame for content - moved inside the Grid and set to Grid.Column="1" -->
+            <Frame x:Name="ContentFrame" 
+           Grid.Column="1"
+           Padding="24"
+                   Background="Transparent"/>
+        </Grid>
+    </Grid>
+</local:CustomWindow>
+

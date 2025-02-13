@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<local:CustomWindow x:ConnectionId='1'
+    x:Class="GameCenter.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GameCenter"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:helper="using:GameCenter.Helpers"
+    Title="GameCenter">
+    <Window.SystemBackdrop>
+        <MicaBackdrop Kind="BaseAlt"/>
+    </Window.SystemBackdrop>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Windows 11 Wave Background -->
+        <Image Source="ms-appx:///Assets/wg-background.png" 
+               Stretch="UniformToFill" 
+               Opacity="0.8"
+               Grid.RowSpan="2"/>
+
+        <!-- Custom Titlebar -->
+        <Grid x:ConnectionId='2' x:Name="AppTitleBar" 
+              Height="48"
+              Margin="0,0,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Orientation="Horizontal" 
+                       Margin="12,0,0,0"
+                       Spacing="12">
+                <Image Source="ms-appx:///Assets/games.png"
+                       Height="24" Width="24"/>
+                <TextBlock Text="Game Center"
+                         VerticalAlignment="Center"
+                         Style="{StaticResource CaptionTextBlockStyle}"/>
+            </StackPanel>
+
+            <StackPanel Grid.Column="2" 
+                       Orientation="Horizontal" 
+                       Margin="0,0,12,0"
+                       Spacing="24">
+                <Button x:ConnectionId='8' x:Name="SearchButton" 
+                        Background="Transparent" 
+                        BorderThickness="0"
+                        Padding="0"
+                        >
+                    <FontIcon Glyph="&#xE721;"/>
+                    <Button.Flyout>
+                        <Flyout x:ConnectionId='25' x:Name="SearchFlyout" Placement="Bottom">
+                            <Flyout.FlyoutPresenterStyle>
+                                <Style TargetType="FlyoutPresenter" BasedOn="{StaticResource AnimatedFlyoutPresenterStyle}">
+                                    <Setter Property="CornerRadius" Value="10"/>
+                                    <Setter Property="MinWidth" Value="300"/>
+                                    <Setter Property="MaxHeight" Value="400"/>
+                                </Style>
+                            </Flyout.FlyoutPresenterStyle>
+                            <StackPanel>
+                                <TextBox x:ConnectionId='26' x:Name="SearchBox" 
+                                         PlaceholderText="Search games or launchers..."
+                                         
+                                         Margin="0,0,0,10"/>
+                                <ListView x:ConnectionId='27' x:Name="GameListView" 
+                                          SelectionMode="None"
+                                          IsItemClickEnabled="False">
+                                    <ListView.ItemTemplate>
+                                        <DataTemplate                         >
+                                            <Grid x:ConnectionId='29'>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                </Grid.ColumnDefinitions>
+                                                <StackPanel>
+                                                    <TextBlock x:ConnectionId='31'                       
+                                                               Style="{ThemeResource BodyTextBlockStyle}"/>
+                                                    <TextBlock x:ConnectionId='32'                          
+                                                               Style="{ThemeResource CaptionTextBlockStyle}"
+                                                               Opacity="0.6"/>
+                                                </StackPanel>
+                                                <Button x:ConnectionId='30' Grid.Column="1" 
+                                                                      
+                                                        Width="32"
+                                                        Height="32"
+                                                        Padding="0"
+                                                        Background="Transparent">
+                                                    <FontIcon Glyph="&#xE768;" FontSize="16"/>
+                                                </Button>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </ListView.ItemTemplate>
+                                </ListView>
+                            </StackPanel>
+                        </Flyout>
+                    </Button.Flyout>
+                </Button>
+
+                <Button x:ConnectionId='9' x:Name="NetworkButton" 
+                        Background="Transparent" 
+                        BorderBrush="Transparent"
+                        BorderThickness="0"
+                        Padding="0"
+                        Width="32"
+                        Height="32"
+                        CornerRadius="0"
+                       >
+                    <FontIcon x:ConnectionId='16' x:Name="NetworkIcon" Glyph="&#xE701;" FontSize="16"/>
+                    <Button.Flyout>
+                        <Flyout x:ConnectionId='17' x:Name="NetworkFlyout" Placement="Bottom">
+                            <Flyout.FlyoutPresenterStyle>
+                                <Style TargetType="FlyoutPresenter" BasedOn="{StaticResource AnimatedFlyoutPresenterStyle}">
+                                    <Setter Property="CornerRadius" Value="10"/>
+                                </Style>
+                            </Flyout.FlyoutPresenterStyle>
+                            <StackPanel Width="300">
+                                <TextBlock x:ConnectionId='18' x:Name="DeviceNameText" Style="{ThemeResource BodyTextBlockStyle}"/>
+                                <TextBlock x:ConnectionId='19' x:Name="IpAddressText" Style="{ThemeResource BodyTextBlockStyle}" Margin="0,4,0,0"/>
+                                <Grid x:ConnectionId='20' x:Name="SpeedGraph" Height="100" Margin="0,16,0,0">
+                                    <Rectangle Fill="{ThemeResource SystemControlBackgroundAltHighBrush}" />
+                                    <Polyline x:ConnectionId='23' x:Name="UploadSpeedLine" Stroke="Green" StrokeThickness="2"/>
+                                    <Polyline x:ConnectionId='24' x:Name="DownloadSpeedLine" Stroke="Blue" StrokeThickness="2"/>
+                                </Grid>
+                                <StackPanel Orientation="Horizontal" Margin="0,8,0,0">
+                                    <TextBlock Text="Upload: " Style="{ThemeResource CaptionTextBlockStyle}"/>
+                                    <TextBlock x:ConnectionId='21' x:Name="UploadSpeedText" Style="{ThemeResource CaptionTextBlockStyle}"/>
+                                    <TextBlock Text="Download: " Style="{ThemeResource CaptionTextBlockStyle}" Margin="16,0,0,0"/>
+                                    <TextBlock x:ConnectionId='22' x:Name="DownloadSpeedText" Style="{ThemeResource CaptionTextBlockStyle}"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Flyout>
+                    </Button.Flyout>
+                </Button>
+
+                <Button x:ConnectionId='10' x:Name="VolumeButton" 
+                        Background="Transparent" 
+                        BorderThickness="0"
+                        Padding="0"
+                        >
+                    <FontIcon Glyph="&#xE767;"/>
+                    <Button.Flyout>
+                        <Flyout x:ConnectionId='13' x:Name="VolumeFlyout" Placement="Bottom">
+                            <Flyout.FlyoutPresenterStyle>
+                                <Style TargetType="FlyoutPresenter" BasedOn="{StaticResource AnimatedFlyoutPresenterStyle}"/>
+                            </Flyout.FlyoutPresenterStyle>
+                            <StackPanel Width="250">
+                                <Slider x:ConnectionId='14' x:Name="VolumeSlider" 
+                                        Minimum="0" 
+                                        Maximum="100" 
+                                        Value="50"/>
+                                <ComboBox x:ConnectionId='15' x:Name="AudioSourceComboBox" 
+                                          Header="Audio Source" 
+                                          Margin="0,12,0,0"
+                                          />
+                            </StackPanel>
+                        </Flyout>
+                    </Button.Flyout>
+                </Button>
+
+                <TextBlock x:ConnectionId='11' x:Name="TimeDisplay" Width="50" 
+                           VerticalAlignment="Center"                             />
+
+                <Button x:ConnectionId='12' x:Name="CloseButton"
+                        Width="32" Height="32"
+                        Style="{StaticResource CaptionButtonStyle}"
+                        Margin="0,0,0,0"
+                                                 >
+                    <FontIcon Glyph="&#xE106;" FontSize="16"/>
+                </Button>
+            </StackPanel>
+        </Grid>
+
+        <!-- Main Content Area -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Navigation View -->
+            <NavigationView x:ConnectionId='3' x:Name="NavView"
+                            PaneDisplayMode="LeftCompact"
+                            IsSettingsVisible="False"
+                            IsBackButtonVisible="Collapsed"
+                            OpenPaneLength="50"
+                            CompactPaneLength="48"
+                            Width="Auto"
+                            IsPaneToggleButtonVisible="False"
+                                                                       
+                                                             >
+                <NavigationView.MenuItems>
+                    <NavigationViewItem Content="Games" Tag="Games" IsSelected="True">
+                        <NavigationViewItem.Icon>
+                            <FontIcon Glyph="&#xE7FC;"/>
+                        </NavigationViewItem.Icon>
+                    </NavigationViewItem>
+                    <NavigationViewItem Content="Friends" Tag="Friends">
+                        <NavigationViewItem.Icon>
+                            <FontIcon Glyph="&#xE779;"/>
+                        </NavigationViewItem.Icon>
+                    </NavigationViewItem>
+                </NavigationView.MenuItems>
+                <NavigationView.PaneFooter>
+                    <StackPanel Orientation="Vertical">
+                        <Button x:ConnectionId='5' x:Name="AccountButton" Background="Transparent" BorderBrush="Transparent">
+                            <Button.Content >
+                                <PersonPicture Width="24" Height="32" ProfilePicture="ms-appx:///Assets/default.png"/>
+                            </Button.Content>
+                            <Button.Flyout>
+                                <Flyout>
+                                    <StackPanel>
+                                        <TextBlock Text="Connect Gaming Accounts" FontWeight="Bold" Margin="0,0,0,10"/>
+                                        <Button Content="Connect Steam Account"  Margin="0,0,0,5"/>
+                                        <Button Content="Connect Epic Games Account"  Margin="0,0,0,5"/>
+                                        <Button Content="Connect Ubisoft Account"  Margin="0,0,0,5"/>
+                                        <Button Content="Connect Xbox Account" Margin="0,0,0,5"/>
+                                        <Button Content="Connect Rockstar Account"  Margin="0,0,0,5"/>
+                                        <Button Content="Connect Playstation Account"  Margin="0,0,0,5"/>
+                                    </StackPanel>
+                                </Flyout>
+                            </Button.Flyout>
+                        </Button>
+                        <Button Background="Transparent" BorderThickness="0" Margin="3,3,3,3">
+                            <Button.Content >
+                                <FontIcon Glyph="&#xE713;"/>
+                            </Button.Content>
+                        </Button>
+                        <Button  Background="Transparent" BorderThickness="0" Margin="3,3,3,3">
+                            <Button.Content >
+                                <FontIcon Glyph="&#xE7E8;"/>
+                            </Button.Content>
+                            <Button.Flyout>
+                                <Flyout>
+                                    <StackPanel>
+                                        <Button x:ConnectionId='6'                               Width="200" Margin="0,0,0,5">
+                                            <StackPanel Orientation="Horizontal">
+                                                <FontIcon Glyph="&#xE777;" Margin="0,0,8,0"/>
+                                                <TextBlock Text="Restart Windows"/>
+                                            </StackPanel>
+                                        </Button>
+                                        <Button x:ConnectionId='7'  Width="200"                              >
+                                            <StackPanel Orientation="Horizontal">
+                                                <FontIcon Glyph="&#xE7E8;" Margin="0,0,8,0"/>
+                                                <TextBlock Text="Shutdown Windows"/>
+                                            </StackPanel>
+                                        </Button>
+                                    </StackPanel>
+                                </Flyout>
+                            </Button.Flyout>
+                        </Button>
+                    </StackPanel>
+                </NavigationView.PaneFooter>
+            </NavigationView>
+
+            <!-- Frame for content -->
+            <!-- Frame for content - moved inside the Grid and set to Grid.Column="1" -->
+            <Frame x:ConnectionId='4' x:Name="ContentFrame" 
+           Grid.Column="1"
+           Padding="24"
+                   Background="Transparent"/>
+        </Grid>
+    </Grid>
+</local:CustomWindow>
+
+

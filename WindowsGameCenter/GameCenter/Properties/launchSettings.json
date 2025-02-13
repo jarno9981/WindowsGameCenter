@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "GameCenter (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "GameCenter (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

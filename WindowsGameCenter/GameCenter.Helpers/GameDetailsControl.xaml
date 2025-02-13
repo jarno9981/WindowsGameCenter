@@ -1,0 +1,116 @@
+<UserControl
+    x:Class="GameCenter.Helpers.GameDetailsControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GameCenter.Helpers"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <Storyboard x:Name="ExpandStoryboard">
+            <DoubleAnimation Storyboard.TargetName="ExpandedContent" 
+                             Storyboard.TargetProperty="Opacity"
+                             From="0" To="1" Duration="0:0:0.2"/>
+            <DoubleAnimation Storyboard.TargetName="CardTransform" 
+                             Storyboard.TargetProperty="ScaleX"
+                             From="1" To="1.05" Duration="0:0:0.2"/>
+            <DoubleAnimation Storyboard.TargetName="CardTransform" 
+                             Storyboard.TargetProperty="ScaleY"
+                             From="1" To="1.05" Duration="0:0:0.2"/>
+        </Storyboard>
+        <Storyboard x:Name="CollapseStoryboard">
+            <DoubleAnimation Storyboard.TargetName="ExpandedContent" 
+                             Storyboard.TargetProperty="Opacity"
+                             From="1" To="0" Duration="0:0:0.2"/>
+            <DoubleAnimation Storyboard.TargetName="CardTransform" 
+                             Storyboard.TargetProperty="ScaleX"
+                             From="1.05" To="1" Duration="0:0:0.2"/>
+            <DoubleAnimation Storyboard.TargetName="CardTransform" 
+                             Storyboard.TargetProperty="ScaleY"
+                             From="1.05" To="1" Duration="0:0:0.2"/>
+        </Storyboard>
+    </UserControl.Resources>
+
+    <Grid x:Name="RootGrid" 
+          Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
+          BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+          BorderThickness="1"
+          CornerRadius="8"
+          Padding="16"
+          PointerEntered="RootGrid_PointerEntered"
+          PointerExited="RootGrid_PointerExited"
+        >
+        <Grid.RenderTransform>
+            <ScaleTransform x:Name="CardTransform" ScaleX="1" ScaleY="1"/>
+        </Grid.RenderTransform>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Normal Card Content -->
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Image x:Name="GameImage" Stretch="UniformToFill"/>
+
+            <StackPanel Grid.Row="1" Margin="0,8,0,0" Spacing="4">
+                <TextBlock x:Name="GameTitle" Style="{ThemeResource SubtitleTextBlockStyle}"/>
+                <TextBlock x:Name="GameLauncher" Style="{ThemeResource CaptionTextBlockStyle}"/>
+            </StackPanel>
+        </Grid>
+
+        <!-- Expanded Content -->
+        <Grid x:Name="ExpandedContent" Grid.Row="1" Opacity="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock x:Name="GameDescription" 
+                       Style="{ThemeResource BodyTextBlockStyle}" 
+                       TextWrapping="Wrap"
+                       Margin="0,16,0,0"/>
+
+            <StackPanel Grid.Row="1" Margin="0,16,0,0">
+                <TextBlock Text="Screenshots" Style="{ThemeResource SubtitleTextBlockStyle}"/>
+                <ScrollViewer HorizontalScrollMode="Enabled" 
+                              VerticalScrollMode="Disabled"
+                              HorizontalScrollBarVisibility="Auto"
+                              Margin="0,8,0,0">
+                    <StackPanel x:Name="ScreenshotsPanel" 
+                                Orientation="Horizontal" 
+                                Spacing="8"/>
+                </ScrollViewer>
+            </StackPanel>
+
+            <StackPanel Grid.Row="2" Margin="0,16,0,0">
+                <TextBlock Text="Available DLC" Style="{ThemeResource SubtitleTextBlockStyle}"/>
+                <ListView x:Name="DLCListView" 
+                          SelectionMode="None" 
+                          IsItemClickEnabled="False"
+                          Margin="0,8,0,0">
+                   
+                </ListView>
+            </StackPanel>
+
+            <StackPanel Grid.Row="3" 
+                        Orientation="Horizontal" 
+                        Spacing="8"
+                        Margin="0,16,0,0">
+                <Button Content="Play" 
+                       
+                        Style="{ThemeResource AccentButtonStyle}"/>
+                <Button Content="Delete" 
+                        />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>
