@@ -570,3 +570,14 @@ C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\Gam
 C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\GameCenter.Commun.dll
 C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\GameCenter.Commun.pdb
 C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\GameCenter.Commun.pri
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Pages\PlatformInstaller.xbf
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Pages\PlatformInstaller.g.i.cs
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Pages\PlatformInstaller.g.cs
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Pages\PlatformInstaller.xaml
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Pages\PlatformInstaller.xbf
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\GameCenter.genpublishdeps.cache
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Pages\InstallerProgressWindow.g.i.cs
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Pages\InstallerProgressWindow.g.cs
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Pages\InstallerProgressWindow.xaml
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Pages\InstallerProgressWindow.xbf
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Pages\InstallerProgressWindow.xbf

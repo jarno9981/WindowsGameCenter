@@ -1,0 +1,65 @@
+<Window
+    x:Class="GameCenter.Pages.InstallerProgressWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GameCenter.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Installer Progress"
+    >
+
+    <Window.SystemBackdrop>
+        <MicaBackdrop Kind="BaseAlt"/>
+    </Window.SystemBackdrop>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Custom titlebar -->
+        <Grid x:Name="AppTitleBar" Height="32" Background="Transparent">
+            <TextBlock x:Name="AppTitleTextBlock" Text="Installer Progress"
+                       VerticalAlignment="Center" Margin="12,0,0,0"
+                       Style="{StaticResource CaptionTextBlockStyle}"/>
+        </Grid>
+
+        <!-- Content -->
+        <Grid Grid.Row="1" Padding="24">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock x:Name="TitleTextBlock"
+                       Grid.Row="0"
+                       Text="Installing..."
+                       Style="{StaticResource SubtitleTextBlockStyle}"
+                       HorizontalAlignment="Center"
+                       Margin="0,0,0,16"/>
+
+            <StackPanel Grid.Row="1" 
+                        VerticalAlignment="Center" 
+                        HorizontalAlignment="Center">
+                <ProgressRing x:Name="ProgressRing"
+                              IsActive="True"
+                              Width="50"
+                              Height="50"
+                              Margin="0,0,0,16"/>
+                <TextBlock x:Name="StatusTextBlock"
+                           Text="Please wait while the installation completes..."
+                           TextAlignment="Center"
+                           TextWrapping="Wrap"/>
+            </StackPanel>
+
+            <Button x:Name="CancelButton"
+                    Grid.Row="2"
+                    Content="Cancel"
+                    HorizontalAlignment="Center"
+                    Click="CancelButton_Click"/>
+        </Grid>
+    </Grid>
+</Window>

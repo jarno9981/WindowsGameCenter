@@ -739,7 +739,7 @@
     <AppxPackagedFile Include="C:\Users\Jarno\.nuget\packages\microsoft.web.webview2\1.0.2903.40\lib_manual\net8.0-windows10.0.17763.0\Microsoft.Web.WebView2.Core.Projection.dll">
       <PackagePath>Microsoft.Web.WebView2.Core.Projection.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\GameCenter.deps.json">
+    <AppxPackagedFile Include="C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\GameCenter.deps.json">
       <PackagePath>GameCenter.deps.json</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jarno\.nuget\packages\microsoft.web.webview2\1.0.2651.64\runtimes\win-x64\native\WebView2Loader.dll">

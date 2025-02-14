@@ -3,4 +3,6 @@ GamePage.xbf
 Loading.xbf
 MainWindow.xbf
 Pages\Friends.xbf
+Pages\InstallerProgressWindow.xbf
+Pages\PlatformInstaller.xbf
 Pages\Settings.xbf

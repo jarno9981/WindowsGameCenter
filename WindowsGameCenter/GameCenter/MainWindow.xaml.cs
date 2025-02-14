@@ -401,7 +401,11 @@ namespace GameCenter
             {
                 ContentFrame.Navigate(typeof(Friends));
             }
-           
+            else if (NavView.SelectedItem == "Platforms")
+            {
+                ContentFrame.Navigate(typeof(PlatformInstaller));
+
+            }
         }
 
         private void NavView_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
@@ -426,6 +430,9 @@ namespace GameCenter
                     break;
                 case "Friends":
                     pageType = typeof(Friends);
+                    break;
+                case "Platforms":
+                    pageType = typeof(PlatformInstaller);
                     break;
             }
 

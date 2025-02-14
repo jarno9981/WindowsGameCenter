@@ -1,0 +1,6 @@
+﻿Windows.Win32.UI.WindowsAndMessaging.EnumWindows
+Windows.Win32.UI.WindowsAndMessaging.GetWindowText
+user32.SetParent
+user32.MoveWindow
+HWND
+SetWindowPos

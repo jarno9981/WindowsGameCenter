@@ -26,6 +26,8 @@
     <None Remove="GamePage.xaml" />
     <None Remove="Loading.xaml" />
     <None Remove="Pages\Friends.xaml" />
+    <None Remove="Pages\InstallerProgressWindow.xaml" />
+    <None Remove="Pages\PlatformInstaller.xaml" />
     <None Remove="Pages\Settings.xaml" />
   </ItemGroup>
 
@@ -52,6 +54,10 @@
     <ProjectCapability Include="Msix" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.Windows.CsWin32" Version="0.3.183">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.1742" />
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.7.250208002-preview1" />
   </ItemGroup>
@@ -93,6 +99,12 @@
     <None Update="Assets\PlatformIcons\xbox.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <Page Update="Pages\InstallerProgressWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Pages\PlatformInstaller.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Update="Pages\Settings.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>

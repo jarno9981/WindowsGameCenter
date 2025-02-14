@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-02-13T16:28:42.091</Modified>
+      <Modified>2025-02-14T10:46:04.879</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-02-13T16:08:47.011</Modified>
+      <Modified>2025-02-14T10:26:45.576</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Accounts\bin\x64\Debug\net8.0-windows10.0.19041.0\GameCenter.Accounts.pri">
       <PackagePath>GameCenter.Accounts.pri</PackagePath>
@@ -56,11 +56,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\GameCenter.runtimeconfig.json">
       <PackagePath>GameCenter.runtimeconfig.json</PackagePath>
-      <Modified>2025-02-13T16:08:46.914</Modified>
+      <Modified>2025-02-14T09:15:28.150</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\GameCenter.dll">
       <PackagePath>GameCenter.dll</PackagePath>
-      <Modified>2025-02-13T16:28:41.505</Modified>
+      <Modified>2025-02-14T10:46:04.306</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Accounts\bin\x64\Debug\net8.0-windows10.0.19041.0\GameCenter.Accounts.dll">
       <PackagePath>GameCenter.Accounts.dll</PackagePath>
@@ -80,7 +80,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\apphost.exe">
       <PackagePath>GameCenter.exe</PackagePath>
-      <Modified>2025-02-13T16:28:41.510</Modified>
+      <Modified>2025-02-14T10:46:04.312</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jarno\.nuget\packages\microsoft.web.webview2\1.0.2651.64\runtimes\win-x64\native\WebView2Loader.dll">
       <PackagePath>runtimes\win-x64\native\WebView2Loader.dll</PackagePath>
@@ -986,9 +986,9 @@
       <PackagePath>Microsoft.Web.WebView2.Core.Projection.dll</PackagePath>
       <Modified>2024-11-10T08:57:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\GameCenter.deps.json">
+    <AppxPackagedFile Include="C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\GameCenter.deps.json">
       <PackagePath>GameCenter.deps.json</PackagePath>
-      <Modified>2025-02-13T16:08:46.833</Modified>
+      <Modified>2025-02-14T09:24:55.129</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jarno\.nuget\packages\microsoft.web.webview2\1.0.2651.64\runtimes\win-x64\native\WebView2Loader.dll">
       <PackagePath>GameCenter.Commun\runtimes\win-x64\native\WebView2Loader.dll</PackagePath>

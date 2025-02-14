@@ -206,6 +206,11 @@
                             <FontIcon Glyph="&#xE779;"/>
                         </NavigationViewItem.Icon>
                     </NavigationViewItem>
+                    <NavigationViewItem Content="Platforms" Tag="Platforms">
+                        <NavigationViewItem.Icon>
+                            <FontIcon Glyph="&#xE97C;"/>
+                        </NavigationViewItem.Icon>
+                    </NavigationViewItem>
                 </NavigationView.MenuItems>
                 <NavigationView.PaneFooter>
                     <StackPanel Orientation="Vertical">
