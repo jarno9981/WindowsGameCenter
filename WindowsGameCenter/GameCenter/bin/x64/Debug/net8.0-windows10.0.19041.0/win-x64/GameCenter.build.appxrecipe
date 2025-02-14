@@ -28,6 +28,12 @@
     <AppxPackagedFile Include="C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Accounts\bin\x64\Debug\net8.0-windows10.0.19041.0\GameCenter.Accounts.pri">
+      <PackagePath>GameCenter.Accounts.pri</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Commun\bin\x64\Debug\net8.0-windows10.0.19041.0\GameCenter.Commun.pri">
+      <PackagePath>GameCenter.Commun.pri</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Helpers\bin\x64\Debug\net8.0-windows10.0.19041.0\GameCenter.Helpers.pri">
       <PackagePath>GameCenter.Helpers.pri</PackagePath>
     </AppxPackagedFile>
@@ -39,6 +45,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\GameCenter.dll">
       <PackagePath>GameCenter.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Accounts\bin\x64\Debug\net8.0-windows10.0.19041.0\GameCenter.Accounts.dll">
+      <PackagePath>GameCenter.Accounts.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Commun\bin\x64\Debug\net8.0-windows10.0.19041.0\GameCenter.Commun.dll">
+      <PackagePath>GameCenter.Commun.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Helpers\bin\x64\Debug\net8.0-windows10.0.19041.0\GameCenter.Helpers.dll">
       <PackagePath>GameCenter.Helpers.dll</PackagePath>
@@ -706,6 +718,9 @@
     <AppxPackagedFile Include="C:\Users\Jarno\.nuget\packages\sqlitepclraw.provider.e_sqlite3\2.1.10\lib\net6.0-windows7.0\SQLitePCLRaw.provider.e_sqlite3.dll">
       <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Jarno\.nuget\packages\steamworks.net\2024.8.0\runtimes\win-x64\lib\netstandard2.1\Steamworks.NET.dll">
+      <PackagePath>Steamworks.NET.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jarno\.nuget\packages\microsoft.web.webview2\1.0.2903.40\runtimes\win-x64\native\WebView2Loader.dll">
       <PackagePath>WebView2Loader.dll</PackagePath>
     </AppxPackagedFile>
@@ -727,11 +742,17 @@
     <AppxPackagedFile Include="C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\GameCenter.deps.json">
       <PackagePath>GameCenter.deps.json</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Jarno\.nuget\packages\microsoft.web.webview2\1.0.2651.64\runtimes\win-x64\native\WebView2Loader.dll">
+      <PackagePath>GameCenter.Commun\runtimes\win-x64\native\WebView2Loader.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Helpers\obj\x64\Debug\net8.0-windows10.0.19041.0\GameDetailsControl.xbf">
       <PackagePath>GameCenter.Helpers\GameDetailsControl.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jarno\.nuget\packages\microsoft.web.webview2\1.0.2651.64\runtimes\win-x64\native\WebView2Loader.dll">
       <PackagePath>GameCenter.Helpers\runtimes\win-x64\native\WebView2Loader.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Jarno\.nuget\packages\microsoft.web.webview2\1.0.2651.64\runtimes\win-x64\native\WebView2Loader.dll">
+      <PackagePath>GameCenter.Accounts\runtimes\win-x64\native\WebView2Loader.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jarno\.nuget\packages\microsoft.web.webview2\1.0.2651.64\runtimes\win-x64\native\WebView2Loader.dll">
       <PackagePath>GameCenter.Services\runtimes\win-x64\native\WebView2Loader.dll</PackagePath>

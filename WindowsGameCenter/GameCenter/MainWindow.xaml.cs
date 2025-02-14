@@ -21,6 +21,11 @@ using Microsoft.UI.Xaml.Controls.Primitives;
 using GameCenter.Helpers;
 using System.ComponentModel.Design;
 using GameCenter.Pages;
+using System.Security.AccessControl;
+using GameCenter.Accounts.Steam;
+using GameCenter.Commun;
+using System.Net.Sockets;
+using System.Net;
 
 namespace GameCenter
 {
@@ -117,13 +122,38 @@ namespace GameCenter
             }
         }
 
-        private void UpdateNetworkInfo()
+      private void UpdateNetworkInfo()
         {
-            var hostNames = NetworkInformation.GetHostNames();
-            var ipAddress = hostNames.FirstOrDefault(h => h.Type == Windows.Networking.HostNameType.Ipv4)?.DisplayName ?? "Unknown";
+            string ipAddress = GetLocalIPAddress();
+            string deviceName = Environment.MachineName;
+            DeviceNameText.Text = $"Device: {deviceName}";
+            IpAddressText.Text = ipAddress ?? "Unable to determine IP address";
+        }
 
-            DeviceNameText.Text = $"Device: {Environment.MachineName}";
-            IpAddressText.Text = $"IP: {ipAddress}";
+        private string GetLocalIPAddress()
+        {
+            var validInterfaces = NetworkInterface.GetAllNetworkInterfaces()
+                .Where(ni => ni.OperationalStatus == OperationalStatus.Up && 
+                             (ni.NetworkInterfaceType == NetworkInterfaceType.Wireless80211 || 
+                              ni.NetworkInterfaceType == NetworkInterfaceType.Ethernet))
+                .ToList();
+
+            foreach (var netInterface in validInterfaces)
+            {
+                var ipProps = netInterface.GetIPProperties();
+                var addresses = ipProps.UnicastAddresses
+                    .Where(addr => addr.Address.AddressFamily == AddressFamily.InterNetwork &&
+                                   !IPAddress.IsLoopback(addr.Address) &&
+                                   addr.Address.ToString().StartsWith("192.168."))
+                    .ToList();
+
+                if (addresses.Count > 0)
+                {
+                    return addresses[0].Address.ToString();
+                }
+            }
+
+            return null;
         }
 
         private void NetworkUpdateTimer_Tick(object sender, object e)
@@ -302,7 +332,7 @@ namespace GameCenter
             ContentDialog dialog = new ContentDialog
             {
                 Title = "Restart Windows",
-                Content = "Are you sure you want to restart Windows?",
+                Content = "Are you sure you want to restart Windows? This operation requires elevated permissions and may not work in all environments.",
                 PrimaryButtonText = "Restart",
                 CloseButtonText = "Cancel",
                 XamlRoot = this.Content.XamlRoot,
@@ -312,9 +342,14 @@ namespace GameCenter
 
             if (result == ContentDialogResult.Primary)
             {
-                // Add code to restart Windows
-                // Note: This requires elevated permissions
-                // You may need to use Windows.System.ShutdownManager or process.Start with shutdown commands
+                try
+                {
+                    Process.Start("shutdown", "/r /t 0");
+                }
+                catch (Exception ex)
+                {
+                    await ShowErrorDialog("Failed to restart Windows. This operation may require elevated permissions.", ex.Message);
+                }
             }
         }
 
@@ -323,21 +358,38 @@ namespace GameCenter
             ContentDialog dialog = new ContentDialog
             {
                 Title = "Shutdown Windows",
-                Content = "Are you sure you want to shut down Windows?",
+                Content = "Are you sure you want to shut down Windows? This operation requires elevated permissions and may not work in all environments.",
                 PrimaryButtonText = "Shutdown",
                 CloseButtonText = "Cancel",
                 XamlRoot = this.Content.XamlRoot,
-
             };
 
             ContentDialogResult result = await dialog.ShowAsync();
 
             if (result == ContentDialogResult.Primary)
             {
-                // Add code to shutdown Windows
-                // Note: This requires elevated permissions
-                // You may need to use Windows.System.ShutdownManager or process.Start with shutdown commands
+                try
+                {
+                    Process.Start("shutdown", "/s /t 0");
+                }
+                catch (Exception ex)
+                {
+                    await ShowErrorDialog("Failed to shut down Windows. This operation may require elevated permissions.", ex.Message);
+                }
             }
+        }
+
+        private async Task ShowErrorDialog(string title, string content)
+        {
+            ContentDialog errorDialog = new ContentDialog
+            {
+                Title = title,
+                Content = content,
+                CloseButtonText = "OK",
+                XamlRoot = this.Content.XamlRoot,
+            };
+
+            await errorDialog.ShowAsync();
         }
 
         private void NavView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
@@ -349,6 +401,7 @@ namespace GameCenter
             {
                 ContentFrame.Navigate(typeof(Friends));
             }
+           
         }
 
         private void NavView_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
@@ -381,6 +434,48 @@ namespace GameCenter
                 ContentFrame.Navigate(pageType);
             }
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ContentFrame.Navigate(typeof(Settings));
+
+        }
+
+        private async void SteamConnect_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                var userData = await SteamAuthHelper.AuthenticateAsync(this.Content.XamlRoot);
+                if (userData != null)
+                {
+                    await DisplaySteamAccountInfo(userData);
+                }
+                else
+                {
+                    await ShowErrorDialog("Steam Authentication Error", "Failed to authenticate with Steam.");
+                }
+            }
+            catch (Exception ex)
+            {
+                await ShowErrorDialog("Steam Connection Error", $"An error occurred: {ex.Message}");
+            }
+        }
+
+        private async Task DisplaySteamAccountInfo(UserData userData)
+        {
+            ContentDialog dialog = new ContentDialog()
+            {
+                Title = "Steam Account Connected",
+                Content = $"Welcome, {userData.PersonaName}!\nSteam ID: {userData.SteamId}",
+                CloseButtonText = "OK",
+                XamlRoot = this.Content.XamlRoot
+            };
+
+            await dialog.ShowAsync();
+        }
+
+
+
     }
 
    

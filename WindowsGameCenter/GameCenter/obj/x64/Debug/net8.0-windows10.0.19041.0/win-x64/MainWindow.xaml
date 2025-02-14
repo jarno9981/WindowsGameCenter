@@ -49,14 +49,14 @@
                        Orientation="Horizontal" 
                        Margin="0,0,12,0"
                        Spacing="24">
-                <Button x:ConnectionId='8' x:Name="SearchButton" 
+                <Button x:ConnectionId='10' x:Name="SearchButton" 
                         Background="Transparent" 
                         BorderThickness="0"
                         Padding="0"
                         >
                     <FontIcon Glyph="&#xE721;"/>
                     <Button.Flyout>
-                        <Flyout x:ConnectionId='25' x:Name="SearchFlyout" Placement="Bottom">
+                        <Flyout x:ConnectionId='27' x:Name="SearchFlyout" Placement="Bottom">
                             <Flyout.FlyoutPresenterStyle>
                                 <Style TargetType="FlyoutPresenter" BasedOn="{StaticResource AnimatedFlyoutPresenterStyle}">
                                     <Setter Property="CornerRadius" Value="10"/>
@@ -65,28 +65,28 @@
                                 </Style>
                             </Flyout.FlyoutPresenterStyle>
                             <StackPanel>
-                                <TextBox x:ConnectionId='26' x:Name="SearchBox" 
+                                <TextBox x:ConnectionId='28' x:Name="SearchBox" 
                                          PlaceholderText="Search games or launchers..."
                                          
                                          Margin="0,0,0,10"/>
-                                <ListView x:ConnectionId='27' x:Name="GameListView" 
+                                <ListView x:ConnectionId='29' x:Name="GameListView" 
                                           SelectionMode="None"
                                           IsItemClickEnabled="False">
                                     <ListView.ItemTemplate>
                                         <DataTemplate                         >
-                                            <Grid x:ConnectionId='29'>
+                                            <Grid x:ConnectionId='31'>
                                                 <Grid.ColumnDefinitions>
                                                     <ColumnDefinition Width="*"/>
                                                     <ColumnDefinition Width="Auto"/>
                                                 </Grid.ColumnDefinitions>
                                                 <StackPanel>
-                                                    <TextBlock x:ConnectionId='31'                       
+                                                    <TextBlock x:ConnectionId='33'                       
                                                                Style="{ThemeResource BodyTextBlockStyle}"/>
-                                                    <TextBlock x:ConnectionId='32'                          
+                                                    <TextBlock x:ConnectionId='34'                          
                                                                Style="{ThemeResource CaptionTextBlockStyle}"
                                                                Opacity="0.6"/>
                                                 </StackPanel>
-                                                <Button x:ConnectionId='30' Grid.Column="1" 
+                                                <Button x:ConnectionId='32' Grid.Column="1" 
                                                                       
                                                         Width="32"
                                                         Height="32"
@@ -103,7 +103,7 @@
                     </Button.Flyout>
                 </Button>
 
-                <Button x:ConnectionId='9' x:Name="NetworkButton" 
+                <Button x:ConnectionId='11' x:Name="NetworkButton" 
                         Background="Transparent" 
                         BorderBrush="Transparent"
                         BorderThickness="0"
@@ -112,50 +112,50 @@
                         Height="32"
                         CornerRadius="0"
                        >
-                    <FontIcon x:ConnectionId='16' x:Name="NetworkIcon" Glyph="&#xE701;" FontSize="16"/>
+                    <FontIcon x:ConnectionId='18' x:Name="NetworkIcon" Glyph="&#xE701;" FontSize="16"/>
                     <Button.Flyout>
-                        <Flyout x:ConnectionId='17' x:Name="NetworkFlyout" Placement="Bottom">
+                        <Flyout x:ConnectionId='19' x:Name="NetworkFlyout" Placement="Bottom">
                             <Flyout.FlyoutPresenterStyle>
                                 <Style TargetType="FlyoutPresenter" BasedOn="{StaticResource AnimatedFlyoutPresenterStyle}">
                                     <Setter Property="CornerRadius" Value="10"/>
                                 </Style>
                             </Flyout.FlyoutPresenterStyle>
                             <StackPanel Width="300">
-                                <TextBlock x:ConnectionId='18' x:Name="DeviceNameText" Style="{ThemeResource BodyTextBlockStyle}"/>
-                                <TextBlock x:ConnectionId='19' x:Name="IpAddressText" Style="{ThemeResource BodyTextBlockStyle}" Margin="0,4,0,0"/>
-                                <Grid x:ConnectionId='20' x:Name="SpeedGraph" Height="100" Margin="0,16,0,0">
+                                <TextBlock x:ConnectionId='20' x:Name="DeviceNameText" Style="{ThemeResource BodyTextBlockStyle}"/>
+                                <TextBlock x:ConnectionId='21' x:Name="IpAddressText" Style="{ThemeResource BodyTextBlockStyle}" Margin="0,4,0,0"/>
+                                <Grid x:ConnectionId='22' x:Name="SpeedGraph" Height="100" Margin="0,16,0,0">
                                     <Rectangle Fill="{ThemeResource SystemControlBackgroundAltHighBrush}" />
-                                    <Polyline x:ConnectionId='23' x:Name="UploadSpeedLine" Stroke="Green" StrokeThickness="2"/>
-                                    <Polyline x:ConnectionId='24' x:Name="DownloadSpeedLine" Stroke="Blue" StrokeThickness="2"/>
+                                    <Polyline x:ConnectionId='25' x:Name="UploadSpeedLine" Stroke="Green" StrokeThickness="2"/>
+                                    <Polyline x:ConnectionId='26' x:Name="DownloadSpeedLine" Stroke="Blue" StrokeThickness="2"/>
                                 </Grid>
                                 <StackPanel Orientation="Horizontal" Margin="0,8,0,0">
                                     <TextBlock Text="Upload: " Style="{ThemeResource CaptionTextBlockStyle}"/>
-                                    <TextBlock x:ConnectionId='21' x:Name="UploadSpeedText" Style="{ThemeResource CaptionTextBlockStyle}"/>
+                                    <TextBlock x:ConnectionId='23' x:Name="UploadSpeedText" Style="{ThemeResource CaptionTextBlockStyle}"/>
                                     <TextBlock Text="Download: " Style="{ThemeResource CaptionTextBlockStyle}" Margin="16,0,0,0"/>
-                                    <TextBlock x:ConnectionId='22' x:Name="DownloadSpeedText" Style="{ThemeResource CaptionTextBlockStyle}"/>
+                                    <TextBlock x:ConnectionId='24' x:Name="DownloadSpeedText" Style="{ThemeResource CaptionTextBlockStyle}"/>
                                 </StackPanel>
                             </StackPanel>
                         </Flyout>
                     </Button.Flyout>
                 </Button>
 
-                <Button x:ConnectionId='10' x:Name="VolumeButton" 
+                <Button x:ConnectionId='12' x:Name="VolumeButton" 
                         Background="Transparent" 
                         BorderThickness="0"
                         Padding="0"
                         >
                     <FontIcon Glyph="&#xE767;"/>
                     <Button.Flyout>
-                        <Flyout x:ConnectionId='13' x:Name="VolumeFlyout" Placement="Bottom">
+                        <Flyout x:ConnectionId='15' x:Name="VolumeFlyout" Placement="Bottom">
                             <Flyout.FlyoutPresenterStyle>
                                 <Style TargetType="FlyoutPresenter" BasedOn="{StaticResource AnimatedFlyoutPresenterStyle}"/>
                             </Flyout.FlyoutPresenterStyle>
                             <StackPanel Width="250">
-                                <Slider x:ConnectionId='14' x:Name="VolumeSlider" 
+                                <Slider x:ConnectionId='16' x:Name="VolumeSlider" 
                                         Minimum="0" 
                                         Maximum="100" 
                                         Value="50"/>
-                                <ComboBox x:ConnectionId='15' x:Name="AudioSourceComboBox" 
+                                <ComboBox x:ConnectionId='17' x:Name="AudioSourceComboBox" 
                                           Header="Audio Source" 
                                           Margin="0,12,0,0"
                                           />
@@ -164,10 +164,10 @@
                     </Button.Flyout>
                 </Button>
 
-                <TextBlock x:ConnectionId='11' x:Name="TimeDisplay" Width="50" 
+                <TextBlock x:ConnectionId='13' x:Name="TimeDisplay" Width="50" 
                            VerticalAlignment="Center"                             />
 
-                <Button x:ConnectionId='12' x:Name="CloseButton"
+                <Button x:ConnectionId='14' x:Name="CloseButton"
                         Width="32" Height="32"
                         Style="{StaticResource CaptionButtonStyle}"
                         Margin="0,0,0,0"
@@ -217,17 +217,52 @@
                                 <Flyout>
                                     <StackPanel>
                                         <TextBlock Text="Connect Gaming Accounts" FontWeight="Bold" Margin="0,0,0,10"/>
-                                        <Button Content="Connect Steam Account"  Margin="0,0,0,5"/>
-                                        <Button Content="Connect Epic Games Account"  Margin="0,0,0,5"/>
-                                        <Button Content="Connect Ubisoft Account"  Margin="0,0,0,5"/>
-                                        <Button Content="Connect Xbox Account" Margin="0,0,0,5"/>
-                                        <Button Content="Connect Rockstar Account"  Margin="0,0,0,5"/>
-                                        <Button Content="Connect Playstation Account"  Margin="0,0,0,5"/>
+                                        <Button x:ConnectionId='9' Background="Transparent" BorderBrush="Transparent" x:Name="SteamConnect"                            Margin="0,0,0,5">
+                                            <StackPanel Orientation="Horizontal" Spacing="8">
+                                                <Image Source="ms-appx:///Assets/PlatformIcons/steam.png" Width="24" Height="24"/>
+                                                <TextBlock Text="Connect Steam Account" VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </Button>
+
+                                        <Button Background="Transparent" BorderBrush="Transparent" Margin="0,0,0,5">
+                                            <StackPanel Orientation="Horizontal" Spacing="8">
+                                                <Image Source="ms-appx:///Assets/PlatformIcons/Epic Games.png" Width="24" Height="24"/>
+                                                <TextBlock Text="Connect Epic Games Account" VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </Button>
+
+                                        <Button Background="Transparent" BorderBrush="Transparent" Margin="0,0,0,5">
+                                            <StackPanel Orientation="Horizontal" Spacing="8">
+                                                <Image Source="ms-appx:///Assets/PlatformIcons/ubisoft.png" Width="24" Height="24"/>
+                                                <TextBlock Text="Connect Ubisoft Account" VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </Button>
+
+                                        <Button Background="Transparent" BorderBrush="Transparent" Margin="0,0,0,5">
+                                            <StackPanel Orientation="Horizontal" Spacing="8">
+                                                <Image Source="ms-appx:///Assets/PlatformIcons/xbox.png" Width="24" Height="24"/>
+                                                <TextBlock Text="Connect Xbox Account" VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </Button>
+
+                                        <Button Background="Transparent" BorderBrush="Transparent" Margin="0,0,0,5">
+                                            <StackPanel Orientation="Horizontal" Spacing="8">
+                                                <Image Source="ms-appx:///Assets/PlatformIcons/Rockstar Social Club.png" Width="24" Height="24"/>
+                                                <TextBlock Text="Connect Rockstar Account" VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </Button>
+
+                                        <Button Background="Transparent" BorderBrush="Transparent" Margin="0,0,0,5">
+                                            <StackPanel Orientation="Horizontal" Spacing="8">
+                                                <Image Source="ms-appx:///Assets/PlatformIcons/PlayStation.png" Width="24" Height="24"/>
+                                                <TextBlock Text="Connect Playstation Account" VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </Button>
                                     </StackPanel>
                                 </Flyout>
                             </Button.Flyout>
                         </Button>
-                        <Button Background="Transparent" BorderThickness="0" Margin="3,3,3,3">
+                        <Button x:ConnectionId='6' Background="Transparent" BorderThickness="0" Margin="3,3,3,3"                     >
                             <Button.Content >
                                 <FontIcon Glyph="&#xE713;"/>
                             </Button.Content>
@@ -239,13 +274,13 @@
                             <Button.Flyout>
                                 <Flyout>
                                     <StackPanel>
-                                        <Button x:ConnectionId='6'                               Width="200" Margin="0,0,0,5">
+                                        <Button x:ConnectionId='7'                               Width="200" Margin="0,0,0,5">
                                             <StackPanel Orientation="Horizontal">
                                                 <FontIcon Glyph="&#xE777;" Margin="0,0,8,0"/>
                                                 <TextBlock Text="Restart Windows"/>
                                             </StackPanel>
                                         </Button>
-                                        <Button x:ConnectionId='7'  Width="200"                              >
+                                        <Button x:ConnectionId='8'  Width="200"                              >
                                             <StackPanel Orientation="Horizontal">
                                                 <FontIcon Glyph="&#xE7E8;" Margin="0,0,8,0"/>
                                                 <TextBlock Text="Shutdown Windows"/>

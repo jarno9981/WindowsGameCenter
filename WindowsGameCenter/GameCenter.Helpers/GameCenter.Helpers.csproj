@@ -17,6 +17,9 @@
     <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="2.1.10" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\GameCenter.Commun\GameCenter.Commun.csproj" />
+  </ItemGroup>
+  <ItemGroup>
     <Page Update="GameDetailsControl.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>

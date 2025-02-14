@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameCenter.Helpers", "GameC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameCenter.Services", "GameCenter.Services\GameCenter.Services.csproj", "{288D8986-C05F-4197-ADA0-44DC74B40C54}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameCenter.Accounts", "GameCenter.Accounts\GameCenter.Accounts.csproj", "{C026E6DB-5689-44BE-9B73-261E04C571A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameCenter.Commun", "GameCenter.Commun\GameCenter.Commun.csproj", "{4682D613-F7D5-4D50-A9D1-BDDD64444738}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM64 = Debug|ARM64
@@ -61,6 +65,30 @@ Global
 		{288D8986-C05F-4197-ADA0-44DC74B40C54}.Release|x64.Build.0 = Release|Any CPU
 		{288D8986-C05F-4197-ADA0-44DC74B40C54}.Release|x86.ActiveCfg = Release|Any CPU
 		{288D8986-C05F-4197-ADA0-44DC74B40C54}.Release|x86.Build.0 = Release|Any CPU
+		{C026E6DB-5689-44BE-9B73-261E04C571A2}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{C026E6DB-5689-44BE-9B73-261E04C571A2}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{C026E6DB-5689-44BE-9B73-261E04C571A2}.Debug|x64.ActiveCfg = Debug|x64
+		{C026E6DB-5689-44BE-9B73-261E04C571A2}.Debug|x64.Build.0 = Debug|x64
+		{C026E6DB-5689-44BE-9B73-261E04C571A2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C026E6DB-5689-44BE-9B73-261E04C571A2}.Debug|x86.Build.0 = Debug|Any CPU
+		{C026E6DB-5689-44BE-9B73-261E04C571A2}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{C026E6DB-5689-44BE-9B73-261E04C571A2}.Release|ARM64.Build.0 = Release|Any CPU
+		{C026E6DB-5689-44BE-9B73-261E04C571A2}.Release|x64.ActiveCfg = Release|Any CPU
+		{C026E6DB-5689-44BE-9B73-261E04C571A2}.Release|x64.Build.0 = Release|Any CPU
+		{C026E6DB-5689-44BE-9B73-261E04C571A2}.Release|x86.ActiveCfg = Release|Any CPU
+		{C026E6DB-5689-44BE-9B73-261E04C571A2}.Release|x86.Build.0 = Release|Any CPU
+		{4682D613-F7D5-4D50-A9D1-BDDD64444738}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{4682D613-F7D5-4D50-A9D1-BDDD64444738}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{4682D613-F7D5-4D50-A9D1-BDDD64444738}.Debug|x64.ActiveCfg = Debug|x64
+		{4682D613-F7D5-4D50-A9D1-BDDD64444738}.Debug|x64.Build.0 = Debug|x64
+		{4682D613-F7D5-4D50-A9D1-BDDD64444738}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4682D613-F7D5-4D50-A9D1-BDDD64444738}.Debug|x86.Build.0 = Debug|Any CPU
+		{4682D613-F7D5-4D50-A9D1-BDDD64444738}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{4682D613-F7D5-4D50-A9D1-BDDD64444738}.Release|ARM64.Build.0 = Release|Any CPU
+		{4682D613-F7D5-4D50-A9D1-BDDD64444738}.Release|x64.ActiveCfg = Release|Any CPU
+		{4682D613-F7D5-4D50-A9D1-BDDD64444738}.Release|x64.Build.0 = Release|Any CPU
+		{4682D613-F7D5-4D50-A9D1-BDDD64444738}.Release|x86.ActiveCfg = Release|Any CPU
+		{4682D613-F7D5-4D50-A9D1-BDDD64444738}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

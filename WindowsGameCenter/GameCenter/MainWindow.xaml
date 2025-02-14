@@ -217,7 +217,7 @@
                                 <Flyout>
                                     <StackPanel>
                                         <TextBlock Text="Connect Gaming Accounts" FontWeight="Bold" Margin="0,0,0,10"/>
-                                        <Button Background="Transparent" BorderBrush="Transparent" Margin="0,0,0,5">
+                                        <Button Background="Transparent" BorderBrush="Transparent" x:Name="SteamConnect" Click="SteamConnect_Click" Margin="0,0,0,5">
                                             <StackPanel Orientation="Horizontal" Spacing="8">
                                                 <Image Source="ms-appx:///Assets/PlatformIcons/steam.png" Width="24" Height="24"/>
                                                 <TextBlock Text="Connect Steam Account" VerticalAlignment="Center"/>
@@ -262,7 +262,7 @@
                                 </Flyout>
                             </Button.Flyout>
                         </Button>
-                        <Button Background="Transparent" BorderThickness="0" Margin="3,3,3,3">
+                        <Button Background="Transparent" BorderThickness="0" Margin="3,3,3,3" Click="Button_Click">
                             <Button.Content >
                                 <FontIcon Glyph="&#xE713;"/>
                             </Button.Content>

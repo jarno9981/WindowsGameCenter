@@ -1,3 +1,13 @@
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Accounts\GameCenter.Accounts.csproj;x64
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Accounts\GameCenter.Accounts.csproj;x64
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Commun\GameCenter.Commun.csproj;x64
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Commun\GameCenter.Commun.csproj;x64
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Commun\GameCenter.Commun.csproj;x64
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Commun\GameCenter.Commun.csproj;x64
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Commun\GameCenter.Commun.csproj;x64
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Commun\GameCenter.Commun.csproj;x64
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Helpers\GameCenter.Helpers.csproj;x64
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Helpers\GameCenter.Helpers.csproj;x64
 C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Helpers\GameCenter.Helpers.csproj;x64
 C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Helpers\GameCenter.Helpers.csproj;x64
 C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Services\GameCenter.Services.csproj;x64

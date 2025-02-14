@@ -40,3 +40,8 @@ C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\Gam
 C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Helpers\obj\x64\Debug\net8.0-windows10.0.19041.0\GameDetailsControl.xaml
 C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Helpers\obj\x64\Debug\net8.0-windows10.0.19041.0\GameDetailsControl.xbf
 C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Helpers\obj\x64\Debug\net8.0-windows10.0.19041.0\XamlSaveStateFile.xml
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Helpers\bin\x64\Debug\net8.0-windows10.0.19041.0\GameCenter.Commun\runtimes\win-x64\native\WebView2Loader.dll
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Helpers\bin\x64\Debug\net8.0-windows10.0.19041.0\GameCenter.Commun.dll
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Helpers\bin\x64\Debug\net8.0-windows10.0.19041.0\GameCenter.Commun.pdb
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Helpers\bin\x64\Debug\net8.0-windows10.0.19041.0\GameCenter.Commun.pri
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Helpers\obj\x64\Debug\net8.0-windows10.0.19041.0\GameCenter.Commun.pri.xml

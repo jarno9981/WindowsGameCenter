@@ -556,3 +556,17 @@ C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\Gam
 C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\PlatformIcons\steam.png
 C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\PlatformIcons\ubisoft.png
 C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\PlatformIcons\xbox.png
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Pages\Settings.xbf
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Pages\Settings.g.i.cs
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Pages\Settings.g.cs
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Pages\Settings.xaml
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Pages\Settings.xbf
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\GameCenter.Accounts\runtimes\win-x64\native\WebView2Loader.dll
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Steamworks.NET.dll
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\GameCenter.Accounts.dll
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\GameCenter.Accounts.pdb
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\GameCenter.Accounts.pri
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\GameCenter.Commun\runtimes\win-x64\native\WebView2Loader.dll
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\GameCenter.Commun.dll
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\GameCenter.Commun.pdb
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\GameCenter.Commun.pri

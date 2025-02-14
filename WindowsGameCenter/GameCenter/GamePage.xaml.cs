@@ -32,7 +32,6 @@ namespace GameCenter
             {
                 // Initialize batteries
 
-                await LoadGamesAsync();
             }
             catch (Exception ex)
             {
@@ -41,57 +40,7 @@ namespace GameCenter
             }
         }
 
-        private async Task LoadGamesAsync()
-        {
-            try
-            {
-                Debug.WriteLine("Starting LoadGamesAsync");
-                RecommendedGames.Clear();
-                ExploreGames.Clear();
-
-                var games = _databaseHelper.LoadGames();
-                Debug.WriteLine($"Loaded {games.Count} games from the database.");
-
-                if (games.Count == 0)
-                {
-                    Debug.WriteLine("No games were loaded from the database.");
-                    await ShowErrorMessageAsync("No games found in the database.");
-                    return;
-                }
-
-                var sortedGames = games.OrderByDescending(g => g.LastPlayed).ToList();
-
-                foreach (var game in sortedGames)
-                {
-                    // Ensure image sources are null
-                    game.ImageSource = null;
-                    game.ScreenshotSources.Clear();
-
-                    if (RecommendedGames.Count < 4)
-                    {
-                        RecommendedGames.Add(game);
-                    }
-                    else
-                    {
-                        ExploreGames.Add(game);
-                    }
-                }
-
-                Debug.WriteLine($"Loaded {RecommendedGames.Count} recommended games and {ExploreGames.Count} explore games.");
-
-                // Check if any games were added to the collections
-                if (RecommendedGames.Count == 0 && ExploreGames.Count == 0)
-                {
-                    Debug.WriteLine("No games were added to RecommendedGames or ExploreGames collections.");
-                    await ShowErrorMessageAsync("Failed to load games into the UI. Please check the database content.");
-                }
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine($"Error in LoadGamesAsync: {ex.Message}");
-                await ShowErrorMessageAsync($"Failed to load games. Error: {ex.Message}");
-            }
-        }
+      
 
         private async Task DeleteGameAsync(Game game)
         {
@@ -100,7 +49,6 @@ namespace GameCenter
                 RecommendedGames.Remove(game);
                 ExploreGames.Remove(game);
 
-                _databaseHelper.DeleteGame(game.Id);
 
                 if (!string.IsNullOrEmpty(game.ImageUrl))
                 {
@@ -148,7 +96,6 @@ namespace GameCenter
                 try
                 {
                     game.LastPlayed = DateTime.Now;
-                    _databaseHelper.UpdateGame(game);
 
                     await Launcher.LaunchUriAsync(new Uri(game.LaunchUri));
                 }

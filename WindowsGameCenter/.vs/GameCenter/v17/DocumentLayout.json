@@ -3,8 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B278E242-A39F-47F5-8DDC-F38C08CE7193}|GameCenter\\GameCenter.csproj|c:\\users\\jarno\\desktop\\windowsgamecenter\\windowsgamecenter\\windowsgamecenter\\gamecenter\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{B278E242-A39F-47F5-8DDC-F38C08CE7193}|GameCenter\\GameCenter.csproj|solutionrelative:gamecenter\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B278E242-A39F-47F5-8DDC-F38C08CE7193}|GameCenter\\GameCenter.csproj|c:\\users\\jarno\\desktop\\windowsgamecenter\\windowsgamecenter\\windowsgamecenter\\gamecenter\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{B278E242-A39F-47F5-8DDC-F38C08CE7193}|GameCenter\\GameCenter.csproj|solutionrelative:gamecenter\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C026E6DB-5689-44BE-9B73-261E04C571A2}|GameCenter.Accounts\\GameCenter.Accounts.csproj|c:\\users\\jarno\\desktop\\windowsgamecenter\\windowsgamecenter\\windowsgamecenter\\gamecenter.accounts\\steam\\steamauthhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C026E6DB-5689-44BE-9B73-261E04C571A2}|GameCenter.Accounts\\GameCenter.Accounts.csproj|solutionrelative:gamecenter.accounts\\steam\\steamauthhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C026E6DB-5689-44BE-9B73-261E04C571A2}|GameCenter.Accounts\\GameCenter.Accounts.csproj|c:\\users\\jarno\\desktop\\windowsgamecenter\\windowsgamecenter\\windowsgamecenter\\gamecenter.accounts\\steam\\steamhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C026E6DB-5689-44BE-9B73-261E04C571A2}|GameCenter.Accounts\\GameCenter.Accounts.csproj|solutionrelative:gamecenter.accounts\\steam\\steamhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B278E242-A39F-47F5-8DDC-F38C08CE7193}|GameCenter\\GameCenter.csproj|c:\\users\\jarno\\desktop\\windowsgamecenter\\windowsgamecenter\\windowsgamecenter\\gamecenter\\gamepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B278E242-A39F-47F5-8DDC-F38C08CE7193}|GameCenter\\GameCenter.csproj|solutionrelative:gamecenter\\gamepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EDFAEE9-589E-4F41-951C-BF23CFCE4A5D}|GameCenter.Helpers\\GameCenter.Helpers.csproj|c:\\users\\jarno\\desktop\\windowsgamecenter\\windowsgamecenter\\windowsgamecenter\\gamecenter.helpers\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EDFAEE9-589E-4F41-951C-BF23CFCE4A5D}|GameCenter.Helpers\\GameCenter.Helpers.csproj|solutionrelative:gamecenter.helpers\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4682D613-F7D5-4D50-A9D1-BDDD64444738}|GameCenter.Commun\\GameCenter.Commun.csproj|c:\\users\\jarno\\desktop\\windowsgamecenter\\windowsgamecenter\\windowsgamecenter\\gamecenter.commun\\userdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4682D613-F7D5-4D50-A9D1-BDDD64444738}|GameCenter.Commun\\GameCenter.Commun.csproj|solutionrelative:gamecenter.commun\\userdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EDFAEE9-589E-4F41-951C-BF23CFCE4A5D}|GameCenter.Helpers\\GameCenter.Helpers.csproj|c:\\users\\jarno\\desktop\\windowsgamecenter\\windowsgamecenter\\windowsgamecenter\\gamecenter.helpers\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EDFAEE9-589E-4F41-951C-BF23CFCE4A5D}|GameCenter.Helpers\\GameCenter.Helpers.csproj|solutionrelative:gamecenter.helpers\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B278E242-A39F-47F5-8DDC-F38C08CE7193}|GameCenter\\GameCenter.csproj|c:\\users\\jarno\\desktop\\windowsgamecenter\\windowsgamecenter\\windowsgamecenter\\gamecenter\\pages\\settings.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B278E242-A39F-47F5-8DDC-F38C08CE7193}|GameCenter\\GameCenter.csproj|solutionrelative:gamecenter\\pages\\settings.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B278E242-A39F-47F5-8DDC-F38C08CE7193}|GameCenter\\GameCenter.csproj|c:\\users\\jarno\\desktop\\windowsgamecenter\\windowsgamecenter\\windowsgamecenter\\gamecenter\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B278E242-A39F-47F5-8DDC-F38C08CE7193}|GameCenter\\GameCenter.csproj|solutionrelative:gamecenter\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter\\obj\\x64\\Debug\\net8.0-windows10.0.19041.0\\win-x64\\Pages\\Settings.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GameCenter\\obj\\x64\\Debug\\net8.0-windows10.0.19041.0\\win-x64\\Pages\\Settings.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B278E242-A39F-47F5-8DDC-F38C08CE7193}|GameCenter\\GameCenter.csproj|c:\\users\\jarno\\desktop\\windowsgamecenter\\windowsgamecenter\\windowsgamecenter\\gamecenter\\pages\\settings.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{B278E242-A39F-47F5-8DDC-F38C08CE7193}|GameCenter\\GameCenter.csproj|solutionrelative:gamecenter\\pages\\settings.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B278E242-A39F-47F5-8DDC-F38C08CE7193}|GameCenter\\GameCenter.csproj|c:\\users\\jarno\\desktop\\windowsgamecenter\\windowsgamecenter\\windowsgamecenter\\gamecenter\\pages\\friends.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -18,11 +62,154 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "GamePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter\\GamePage.xaml.cs",
+              "RelativeDocumentMoniker": "GameCenter\\GamePage.xaml.cs",
+              "ToolTip": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter\\GamePage.xaml.cs",
+              "RelativeToolTip": "GameCenter\\GamePage.xaml.cs",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T16:06:17.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserData.cs",
+              "DocumentMoniker": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Commun\\UserData.cs",
+              "RelativeDocumentMoniker": "GameCenter.Commun\\UserData.cs",
+              "ToolTip": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Commun\\UserData.cs",
+              "RelativeToolTip": "GameCenter.Commun\\UserData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T16:02:47.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Helpers\\Game.cs",
+              "RelativeDocumentMoniker": "GameCenter.Helpers\\Game.cs",
+              "ToolTip": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Helpers\\Game.cs",
+              "RelativeToolTip": "GameCenter.Helpers\\Game.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAuwA8AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T15:58:43.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DatabaseHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Helpers\\DatabaseHelper.cs",
+              "RelativeDocumentMoniker": "GameCenter.Helpers\\DatabaseHelper.cs",
+              "ToolTip": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Helpers\\DatabaseHelper.cs",
+              "RelativeToolTip": "GameCenter.Helpers\\DatabaseHelper.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAEwHAAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T15:53:34.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SteamAuthHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Accounts\\Steam\\SteamAuthHelper.cs",
+              "RelativeDocumentMoniker": "GameCenter.Accounts\\Steam\\SteamAuthHelper.cs",
+              "ToolTip": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Accounts\\Steam\\SteamAuthHelper.cs",
+              "RelativeToolTip": "GameCenter.Accounts\\Steam\\SteamAuthHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T15:53:10.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SteamHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Accounts\\Steam\\SteamHelper.cs",
+              "RelativeDocumentMoniker": "GameCenter.Accounts\\Steam\\SteamHelper.cs",
+              "ToolTip": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Accounts\\Steam\\SteamHelper.cs",
+              "RelativeToolTip": "GameCenter.Accounts\\Steam\\SteamHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T15:45:06.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Settings.g.cs",
+              "DocumentMoniker": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter\\obj\\x64\\Debug\\net8.0-windows10.0.19041.0\\win-x64\\Pages\\Settings.g.cs",
+              "RelativeDocumentMoniker": "GameCenter\\obj\\x64\\Debug\\net8.0-windows10.0.19041.0\\win-x64\\Pages\\Settings.g.cs",
+              "ToolTip": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter\\obj\\x64\\Debug\\net8.0-windows10.0.19041.0\\win-x64\\Pages\\Settings.g.cs",
+              "RelativeToolTip": "GameCenter\\obj\\x64\\Debug\\net8.0-windows10.0.19041.0\\win-x64\\Pages\\Settings.g.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T15:23:01.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter\\App.xaml",
+              "RelativeDocumentMoniker": "GameCenter\\App.xaml",
+              "ToolTip": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter\\App.xaml",
+              "RelativeToolTip": "GameCenter\\App.xaml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAKIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-13T15:20:43.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Settings.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter\\Pages\\Settings.xaml.cs",
+              "RelativeDocumentMoniker": "GameCenter\\Pages\\Settings.xaml.cs",
+              "ToolTip": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter\\Pages\\Settings.xaml.cs",
+              "RelativeToolTip": "GameCenter\\Pages\\Settings.xaml.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAowHYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T15:16:04.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Settings.xaml",
+              "DocumentMoniker": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter\\Pages\\Settings.xaml",
+              "RelativeDocumentMoniker": "GameCenter\\Pages\\Settings.xaml",
+              "ToolTip": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter\\Pages\\Settings.xaml",
+              "RelativeToolTip": "GameCenter\\Pages\\Settings.xaml",
+              "ViewState": "AgIAACYAAAAAAAAAAAAiwGcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-13T15:12:28.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "GameCenter\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter\\MainWindow.xaml.cs",
+              "RelativeToolTip": "GameCenter\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAjwHwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T15:09:24.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Friends.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter\\Pages\\Friends.xaml.cs",
               "RelativeDocumentMoniker": "GameCenter\\Pages\\Friends.xaml.cs",
@@ -35,13 +222,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter\\MainWindow.xaml",
               "RelativeDocumentMoniker": "GameCenter\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter\\MainWindow.xaml",
               "RelativeToolTip": "GameCenter\\MainWindow.xaml",
-              "ViewState": "AgIAANIAAAAAAAAAAAAAAOoAAABdAAAAAAAAAA==",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAIIAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-02-13T14:59:10.974Z",
               "EditorCaption": ""
