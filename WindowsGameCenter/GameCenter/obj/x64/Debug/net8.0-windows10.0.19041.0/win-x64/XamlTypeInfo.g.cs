@@ -226,7 +226,7 @@ namespace GameCenter.GameCenter_XamlTypeInfo
         
         private void InitTypeTables()
         {
-            _typeNameTable = new string[93];
+            _typeNameTable = new string[94];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
@@ -305,23 +305,24 @@ namespace GameCenter.GameCenter_XamlTypeInfo
             _typeNameTable[75] = "System.Collections.ObjectModel.Collection`1<GameCenter.Helpers.Friend>";
             _typeNameTable[76] = "GameCenter.Helpers.Friend";
             _typeNameTable[77] = "Microsoft.UI.Xaml.Media.SolidColorBrush";
-            _typeNameTable[78] = "GameCenter.Pages.InstallerProgressWindow";
-            _typeNameTable[79] = "Microsoft.UI.Xaml.Controls.ProgressBar";
-            _typeNameTable[80] = "Microsoft.UI.Xaml.Controls.Primitives.RangeBase";
-            _typeNameTable[81] = "Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings";
-            _typeNameTable[82] = "GameCenter.Pages.LauncherInfo";
-            _typeNameTable[83] = "Microsoft.UI.Xaml.Visibility";
-            _typeNameTable[84] = "GameCenter.Pages.PlatformInstaller";
-            _typeNameTable[85] = "System.Collections.ObjectModel.ObservableCollection`1<GameCenter.Pages.LauncherInfo>";
-            _typeNameTable[86] = "System.Collections.ObjectModel.Collection`1<GameCenter.Pages.LauncherInfo>";
-            _typeNameTable[87] = "Microsoft.UI.Xaml.Controls.Expander";
-            _typeNameTable[88] = "Microsoft.UI.Xaml.Controls.ExpandDirection";
-            _typeNameTable[89] = "Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings";
-            _typeNameTable[90] = "GameCenter.Pages.Settings";
-            _typeNameTable[91] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
-            _typeNameTable[92] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
+            _typeNameTable[78] = "GameCenter.Pages.GameCenterSetup";
+            _typeNameTable[79] = "GameCenter.Pages.InstallerProgressWindow";
+            _typeNameTable[80] = "Microsoft.UI.Xaml.Controls.ProgressBar";
+            _typeNameTable[81] = "Microsoft.UI.Xaml.Controls.Primitives.RangeBase";
+            _typeNameTable[82] = "Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings";
+            _typeNameTable[83] = "GameCenter.Pages.LauncherInfo";
+            _typeNameTable[84] = "Microsoft.UI.Xaml.Visibility";
+            _typeNameTable[85] = "GameCenter.Pages.PlatformInstaller";
+            _typeNameTable[86] = "System.Collections.ObjectModel.ObservableCollection`1<GameCenter.Pages.LauncherInfo>";
+            _typeNameTable[87] = "System.Collections.ObjectModel.Collection`1<GameCenter.Pages.LauncherInfo>";
+            _typeNameTable[88] = "Microsoft.UI.Xaml.Controls.Expander";
+            _typeNameTable[89] = "Microsoft.UI.Xaml.Controls.ExpandDirection";
+            _typeNameTable[90] = "Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings";
+            _typeNameTable[91] = "GameCenter.Pages.Settings";
+            _typeNameTable[92] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
+            _typeNameTable[93] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
 
-            _typeTable = new global::System.Type[93];
+            _typeTable = new global::System.Type[94];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
@@ -400,21 +401,22 @@ namespace GameCenter.GameCenter_XamlTypeInfo
             _typeTable[75] = typeof(global::System.Collections.ObjectModel.Collection<global::GameCenter.Helpers.Friend>);
             _typeTable[76] = typeof(global::GameCenter.Helpers.Friend);
             _typeTable[77] = typeof(global::Microsoft.UI.Xaml.Media.SolidColorBrush);
-            _typeTable[78] = typeof(global::GameCenter.Pages.InstallerProgressWindow);
-            _typeTable[79] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressBar);
-            _typeTable[80] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.RangeBase);
-            _typeTable[81] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings);
-            _typeTable[82] = typeof(global::GameCenter.Pages.LauncherInfo);
-            _typeTable[83] = typeof(global::Microsoft.UI.Xaml.Visibility);
-            _typeTable[84] = typeof(global::GameCenter.Pages.PlatformInstaller);
-            _typeTable[85] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::GameCenter.Pages.LauncherInfo>);
-            _typeTable[86] = typeof(global::System.Collections.ObjectModel.Collection<global::GameCenter.Pages.LauncherInfo>);
-            _typeTable[87] = typeof(global::Microsoft.UI.Xaml.Controls.Expander);
-            _typeTable[88] = typeof(global::Microsoft.UI.Xaml.Controls.ExpandDirection);
-            _typeTable[89] = typeof(global::Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings);
-            _typeTable[90] = typeof(global::GameCenter.Pages.Settings);
-            _typeTable[91] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
-            _typeTable[92] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
+            _typeTable[78] = typeof(global::GameCenter.Pages.GameCenterSetup);
+            _typeTable[79] = typeof(global::GameCenter.Pages.InstallerProgressWindow);
+            _typeTable[80] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressBar);
+            _typeTable[81] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.RangeBase);
+            _typeTable[82] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings);
+            _typeTable[83] = typeof(global::GameCenter.Pages.LauncherInfo);
+            _typeTable[84] = typeof(global::Microsoft.UI.Xaml.Visibility);
+            _typeTable[85] = typeof(global::GameCenter.Pages.PlatformInstaller);
+            _typeTable[86] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::GameCenter.Pages.LauncherInfo>);
+            _typeTable[87] = typeof(global::System.Collections.ObjectModel.Collection<global::GameCenter.Pages.LauncherInfo>);
+            _typeTable[88] = typeof(global::Microsoft.UI.Xaml.Controls.Expander);
+            _typeTable[89] = typeof(global::Microsoft.UI.Xaml.Controls.ExpandDirection);
+            _typeTable[90] = typeof(global::Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings);
+            _typeTable[91] = typeof(global::GameCenter.Pages.Settings);
+            _typeTable[92] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
+            _typeTable[93] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -480,15 +482,16 @@ namespace GameCenter.GameCenter_XamlTypeInfo
         private object Activate_74_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::GameCenter.Helpers.Friend>(); }
         private object Activate_75_Collection() { return new global::System.Collections.ObjectModel.Collection<global::GameCenter.Helpers.Friend>(); }
         private object Activate_76_Friend() { return new global::GameCenter.Helpers.Friend(); }
-        private object Activate_78_InstallerProgressWindow() { return new global::GameCenter.Pages.InstallerProgressWindow(); }
-        private object Activate_79_ProgressBar() { return new global::Microsoft.UI.Xaml.Controls.ProgressBar(); }
-        private object Activate_82_LauncherInfo() { return new global::GameCenter.Pages.LauncherInfo(); }
-        private object Activate_84_PlatformInstaller() { return new global::GameCenter.Pages.PlatformInstaller(); }
-        private object Activate_85_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::GameCenter.Pages.LauncherInfo>(); }
-        private object Activate_86_Collection() { return new global::System.Collections.ObjectModel.Collection<global::GameCenter.Pages.LauncherInfo>(); }
-        private object Activate_87_Expander() { return new global::Microsoft.UI.Xaml.Controls.Expander(); }
-        private object Activate_90_Settings() { return new global::GameCenter.Pages.Settings(); }
-        private object Activate_91_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
+        private object Activate_78_GameCenterSetup() { return new global::GameCenter.Pages.GameCenterSetup(); }
+        private object Activate_79_InstallerProgressWindow() { return new global::GameCenter.Pages.InstallerProgressWindow(); }
+        private object Activate_80_ProgressBar() { return new global::Microsoft.UI.Xaml.Controls.ProgressBar(); }
+        private object Activate_83_LauncherInfo() { return new global::GameCenter.Pages.LauncherInfo(); }
+        private object Activate_85_PlatformInstaller() { return new global::GameCenter.Pages.PlatformInstaller(); }
+        private object Activate_86_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::GameCenter.Pages.LauncherInfo>(); }
+        private object Activate_87_Collection() { return new global::System.Collections.ObjectModel.Collection<global::GameCenter.Pages.LauncherInfo>(); }
+        private object Activate_88_Expander() { return new global::Microsoft.UI.Xaml.Controls.Expander(); }
+        private object Activate_91_Settings() { return new global::GameCenter.Pages.Settings(); }
+        private object Activate_92_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
         private void StaticInitializer_0_XamlControlsResources() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources).TypeHandle);
         private void StaticInitializer_5_ItemsRepeater() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ItemsRepeater).TypeHandle);
         private void StaticInitializer_7_Layout() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.Layout).TypeHandle);
@@ -539,19 +542,20 @@ namespace GameCenter.GameCenter_XamlTypeInfo
         private void StaticInitializer_74_ObservableCollection() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.ObjectModel.ObservableCollection<global::GameCenter.Helpers.Friend>).TypeHandle);
         private void StaticInitializer_75_Collection() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.ObjectModel.Collection<global::GameCenter.Helpers.Friend>).TypeHandle);
         private void StaticInitializer_76_Friend() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::GameCenter.Helpers.Friend).TypeHandle);
-        private void StaticInitializer_78_InstallerProgressWindow() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::GameCenter.Pages.InstallerProgressWindow).TypeHandle);
-        private void StaticInitializer_79_ProgressBar() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ProgressBar).TypeHandle);
-        private void StaticInitializer_81_ProgressBarTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings).TypeHandle);
-        private void StaticInitializer_82_LauncherInfo() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::GameCenter.Pages.LauncherInfo).TypeHandle);
-        private void StaticInitializer_84_PlatformInstaller() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::GameCenter.Pages.PlatformInstaller).TypeHandle);
-        private void StaticInitializer_85_ObservableCollection() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.ObjectModel.ObservableCollection<global::GameCenter.Pages.LauncherInfo>).TypeHandle);
-        private void StaticInitializer_86_Collection() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.ObjectModel.Collection<global::GameCenter.Pages.LauncherInfo>).TypeHandle);
-        private void StaticInitializer_87_Expander() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.Expander).TypeHandle);
-        private void StaticInitializer_88_ExpandDirection() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ExpandDirection).TypeHandle);
-        private void StaticInitializer_89_ExpanderTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings).TypeHandle);
-        private void StaticInitializer_90_Settings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::GameCenter.Pages.Settings).TypeHandle);
-        private void StaticInitializer_91_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
-        private void StaticInitializer_92_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
+        private void StaticInitializer_78_GameCenterSetup() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::GameCenter.Pages.GameCenterSetup).TypeHandle);
+        private void StaticInitializer_79_InstallerProgressWindow() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::GameCenter.Pages.InstallerProgressWindow).TypeHandle);
+        private void StaticInitializer_80_ProgressBar() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ProgressBar).TypeHandle);
+        private void StaticInitializer_82_ProgressBarTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings).TypeHandle);
+        private void StaticInitializer_83_LauncherInfo() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::GameCenter.Pages.LauncherInfo).TypeHandle);
+        private void StaticInitializer_85_PlatformInstaller() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::GameCenter.Pages.PlatformInstaller).TypeHandle);
+        private void StaticInitializer_86_ObservableCollection() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.ObjectModel.ObservableCollection<global::GameCenter.Pages.LauncherInfo>).TypeHandle);
+        private void StaticInitializer_87_Collection() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.ObjectModel.Collection<global::GameCenter.Pages.LauncherInfo>).TypeHandle);
+        private void StaticInitializer_88_Expander() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.Expander).TypeHandle);
+        private void StaticInitializer_89_ExpandDirection() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ExpandDirection).TypeHandle);
+        private void StaticInitializer_90_ExpanderTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings).TypeHandle);
+        private void StaticInitializer_91_Settings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::GameCenter.Pages.Settings).TypeHandle);
+        private void StaticInitializer_92_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
+        private void StaticInitializer_93_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -613,19 +617,19 @@ namespace GameCenter.GameCenter_XamlTypeInfo
             var newItem = (global::GameCenter.Helpers.Friend)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_85_ObservableCollection(object instance, object item)
+        private void VectorAdd_86_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::GameCenter.Pages.LauncherInfo>)instance;
             var newItem = (global::GameCenter.Pages.LauncherInfo)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_86_Collection(object instance, object item)
+        private void VectorAdd_87_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::GameCenter.Pages.LauncherInfo>)instance;
             var newItem = (global::GameCenter.Pages.LauncherInfo)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_92_IList(object instance, object item)
+        private void VectorAdd_93_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.Controls.TreeViewNode>)instance;
             var newItem = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)item;
@@ -1263,18 +1267,26 @@ namespace GameCenter.GameCenter_XamlTypeInfo
                 xamlType = new global::GameCenter.GameCenter_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 78:   //  GameCenter.Pages.InstallerProgressWindow
+            case 78:   //  GameCenter.Pages.GameCenterSetup
                 userType = new global::GameCenter.GameCenter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Window"));
-                userType.Activator = Activate_78_InstallerProgressWindow;
-                userType.StaticInitializer = StaticInitializer_78_InstallerProgressWindow;
+                userType.Activator = Activate_78_GameCenterSetup;
+                userType.StaticInitializer = StaticInitializer_78_GameCenterSetup;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 79:   //  Microsoft.UI.Xaml.Controls.ProgressBar
+            case 79:   //  GameCenter.Pages.InstallerProgressWindow
+                userType = new global::GameCenter.GameCenter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Window"));
+                userType.Activator = Activate_79_InstallerProgressWindow;
+                userType.StaticInitializer = StaticInitializer_79_InstallerProgressWindow;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 80:   //  Microsoft.UI.Xaml.Controls.ProgressBar
                 userType = new global::GameCenter.GameCenter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Primitives.RangeBase"));
-                userType.Activator = Activate_79_ProgressBar;
-                userType.StaticInitializer = StaticInitializer_79_ProgressBar;
+                userType.Activator = Activate_80_ProgressBar;
+                userType.StaticInitializer = StaticInitializer_80_ProgressBar;
                 userType.AddMemberName("IsIndeterminate");
                 userType.AddMemberName("ShowError");
                 userType.AddMemberName("ShowPaused");
@@ -1282,21 +1294,21 @@ namespace GameCenter.GameCenter_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 80:   //  Microsoft.UI.Xaml.Controls.Primitives.RangeBase
+            case 81:   //  Microsoft.UI.Xaml.Controls.Primitives.RangeBase
                 xamlType = new global::GameCenter.GameCenter_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 81:   //  Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings
+            case 82:   //  Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings
                 userType = new global::GameCenter.GameCenter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.StaticInitializer = StaticInitializer_81_ProgressBarTemplateSettings;
+                userType.StaticInitializer = StaticInitializer_82_ProgressBarTemplateSettings;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 82:   //  GameCenter.Pages.LauncherInfo
+            case 83:   //  GameCenter.Pages.LauncherInfo
                 userType = new global::GameCenter.GameCenter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_82_LauncherInfo;
-                userType.StaticInitializer = StaticInitializer_82_LauncherInfo;
+                userType.Activator = Activate_83_LauncherInfo;
+                userType.StaticInitializer = StaticInitializer_83_LauncherInfo;
                 userType.AddMemberName("Name");
                 userType.AddMemberName("IconPath");
                 userType.AddMemberName("DownloadUrl");
@@ -1311,39 +1323,39 @@ namespace GameCenter.GameCenter_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 83:   //  Microsoft.UI.Xaml.Visibility
+            case 84:   //  Microsoft.UI.Xaml.Visibility
                 xamlType = new global::GameCenter.GameCenter_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 84:   //  GameCenter.Pages.PlatformInstaller
+            case 85:   //  GameCenter.Pages.PlatformInstaller
                 userType = new global::GameCenter.GameCenter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_84_PlatformInstaller;
-                userType.StaticInitializer = StaticInitializer_84_PlatformInstaller;
+                userType.Activator = Activate_85_PlatformInstaller;
+                userType.StaticInitializer = StaticInitializer_85_PlatformInstaller;
                 userType.AddMemberName("Launchers");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 85:   //  System.Collections.ObjectModel.ObservableCollection`1<GameCenter.Pages.LauncherInfo>
+            case 86:   //  System.Collections.ObjectModel.ObservableCollection`1<GameCenter.Pages.LauncherInfo>
                 userType = new global::GameCenter.GameCenter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<GameCenter.Pages.LauncherInfo>"));
-                userType.StaticInitializer = StaticInitializer_85_ObservableCollection;
-                userType.CollectionAdd = VectorAdd_85_ObservableCollection;
+                userType.StaticInitializer = StaticInitializer_86_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_86_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 86:   //  System.Collections.ObjectModel.Collection`1<GameCenter.Pages.LauncherInfo>
+            case 87:   //  System.Collections.ObjectModel.Collection`1<GameCenter.Pages.LauncherInfo>
                 userType = new global::GameCenter.GameCenter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_86_Collection;
-                userType.StaticInitializer = StaticInitializer_86_Collection;
-                userType.CollectionAdd = VectorAdd_86_Collection;
+                userType.Activator = Activate_87_Collection;
+                userType.StaticInitializer = StaticInitializer_87_Collection;
+                userType.CollectionAdd = VectorAdd_87_Collection;
                 xamlType = userType;
                 break;
 
-            case 87:   //  Microsoft.UI.Xaml.Controls.Expander
+            case 88:   //  Microsoft.UI.Xaml.Controls.Expander
                 userType = new global::GameCenter.GameCenter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ContentControl"));
-                userType.Activator = Activate_87_Expander;
-                userType.StaticInitializer = StaticInitializer_87_Expander;
+                userType.Activator = Activate_88_Expander;
+                userType.StaticInitializer = StaticInitializer_88_Expander;
                 userType.AddMemberName("Header");
                 userType.AddMemberName("IsExpanded");
                 userType.AddMemberName("ExpandDirection");
@@ -1353,33 +1365,33 @@ namespace GameCenter.GameCenter_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 88:   //  Microsoft.UI.Xaml.Controls.ExpandDirection
+            case 89:   //  Microsoft.UI.Xaml.Controls.ExpandDirection
                 userType = new global::GameCenter.GameCenter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_88_ExpandDirection;
+                userType.StaticInitializer = StaticInitializer_89_ExpandDirection;
                 userType.AddEnumValue("Down", global::Microsoft.UI.Xaml.Controls.ExpandDirection.Down);
                 userType.AddEnumValue("Up", global::Microsoft.UI.Xaml.Controls.ExpandDirection.Up);
                 xamlType = userType;
                 break;
 
-            case 89:   //  Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings
+            case 90:   //  Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings
                 userType = new global::GameCenter.GameCenter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.StaticInitializer = StaticInitializer_89_ExpanderTemplateSettings;
+                userType.StaticInitializer = StaticInitializer_90_ExpanderTemplateSettings;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 90:   //  GameCenter.Pages.Settings
+            case 91:   //  GameCenter.Pages.Settings
                 userType = new global::GameCenter.GameCenter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_90_Settings;
-                userType.StaticInitializer = StaticInitializer_90_Settings;
+                userType.Activator = Activate_91_Settings;
+                userType.StaticInitializer = StaticInitializer_91_Settings;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 91:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
+            case 92:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
                 userType = new global::GameCenter.GameCenter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_91_TreeViewNode;
-                userType.StaticInitializer = StaticInitializer_91_TreeViewNode;
+                userType.Activator = Activate_92_TreeViewNode;
+                userType.StaticInitializer = StaticInitializer_92_TreeViewNode;
                 userType.AddMemberName("Children");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("Depth");
@@ -1391,10 +1403,10 @@ namespace GameCenter.GameCenter_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 92:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
+            case 93:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
                 userType = new global::GameCenter.GameCenter_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.StaticInitializer = StaticInitializer_92_IList;
-                userType.CollectionAdd = VectorAdd_92_IList;
+                userType.StaticInitializer = StaticInitializer_93_IList;
+                userType.CollectionAdd = VectorAdd_93_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;

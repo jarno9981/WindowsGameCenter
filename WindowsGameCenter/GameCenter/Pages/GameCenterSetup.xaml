@@ -1,0 +1,43 @@
+<!-- GameCenterSetup.xaml -->
+<Window
+    x:Class="GameCenter.Pages.GameCenterSetup"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GameCenter"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="GameCenter Setup">
+
+    <Grid Padding="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Welcome to GameCenter Setup" FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
+
+        <StackPanel Grid.Row="1" Spacing="20">
+            <TextBox x:Name="UsernameTextBox" Header="Username" PlaceholderText="Enter your username"/>
+
+            <PasswordBox x:Name="PasswordBox" Header="Password" PlaceholderText="Enter your password"/>
+
+            <TextBlock Text="Connect Devices" FontWeight="SemiBold"/>
+            <CheckBox x:Name="PCCheckBox" Content="PC"/>
+            <CheckBox x:Name="ConsoleCheckBox" Content="Console"/>
+            <CheckBox x:Name="MobileCheckBox" Content="Mobile"/>
+
+            <TextBlock Text="License Agreement" FontWeight="SemiBold"/>
+            <ScrollViewer Height="100" BorderThickness="1" BorderBrush="{ThemeResource SystemControlForegroundBaseMediumLowBrush}">
+                <TextBlock TextWrapping="Wrap" Padding="10">
+                    This is the GameCenter License Agreement. By using this software, you agree to the terms and conditions outlined in this agreement. 
+                    [Full license agreement text would go here]
+                </TextBlock>
+            </ScrollViewer>
+            <CheckBox x:Name="AgreementCheckBox" Content="I accept the License Agreement"/>
+        </StackPanel>
+
+        <Button Grid.Row="2" Content="Complete Setup" HorizontalAlignment="Right" Click="CompleteSetup_Click"/>
+    </Grid>
+</Window>

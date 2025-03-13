@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="ee63931d-e83b-44b9-a664-4f6d37f96c67" Publisher="CN=Jarno" Version="1.0.0.0" ProcessorArchitecture="x64" />
+  <Identity Name="ee63931d-e83b-44b9-a664-4f6d37f96c67" Publisher="CN=gamecenter" Version="1.0.0.0" ProcessorArchitecture="x64" />
   <mp:PhoneIdentity PhoneProductId="ee63931d-e83b-44b9-a664-4f6d37f96c67" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>GameCenter</DisplayName>

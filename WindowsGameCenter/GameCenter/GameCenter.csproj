@@ -26,6 +26,7 @@
     <None Remove="GamePage.xaml" />
     <None Remove="Loading.xaml" />
     <None Remove="Pages\Friends.xaml" />
+    <None Remove="Pages\GameCenterSetup.xaml" />
     <None Remove="Pages\InstallerProgressWindow.xaml" />
     <None Remove="Pages\PlatformInstaller.xaml" />
     <None Remove="Pages\Settings.xaml" />
@@ -99,6 +100,9 @@
     <None Update="Assets\PlatformIcons\xbox.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <Page Update="Pages\GameCenterSetup.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Update="Pages\InstallerProgressWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -138,5 +142,14 @@
     <PublishReadyToRun Condition="'$(Configuration)' != 'Debug'">True</PublishReadyToRun>
     <PublishTrimmed Condition="'$(Configuration)' == 'Debug'">False</PublishTrimmed>
     <PublishTrimmed Condition="'$(Configuration)' != 'Debug'">True</PublishTrimmed>
+    <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
+    <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
+    <PackageCertificateKeyFile>GameCenter_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
+    <GenerateTestArtifacts>True</GenerateTestArtifacts>
+    <AppxBundle>Never</AppxBundle>
+    <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
   </PropertyGroup>
 </Project>

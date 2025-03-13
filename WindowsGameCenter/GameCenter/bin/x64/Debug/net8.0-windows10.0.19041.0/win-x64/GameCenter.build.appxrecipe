@@ -9,7 +9,7 @@
     <SolutionConfiguration>Debug|x64</SolutionConfiguration>
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>ee63931d-e83b-44b9-a664-4f6d37f96c67</PackageIdentityName>
-    <PackageIdentityPublisher>CN=Jarno</PackageIdentityPublisher>
+    <PackageIdentityPublisher>CN=gamecenter</PackageIdentityPublisher>
     <IntermediateOutputPath>C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
