@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GameCenter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0fda11f907d189fc185a72d27769c58e71c13ab")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9163f53dab9e4db0a9b76523780e7bd177e8d3e")]
 [assembly: System.Reflection.AssemblyProductAttribute("GameCenter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GameCenter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

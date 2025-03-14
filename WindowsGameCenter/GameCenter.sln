@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameCenter.Accounts", "Game
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameCenter.Commun", "GameCenter.Commun\GameCenter.Commun.csproj", "{4682D613-F7D5-4D50-A9D1-BDDD64444738}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameCenterFolders", "GameCenterFolders\GameCenterFolders.csproj", "{FD9C9FB3-958D-4DBE-AD87-4FC58490DE24}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM64 = Debug|ARM64
@@ -89,8 +91,23 @@ Global
 		{4682D613-F7D5-4D50-A9D1-BDDD64444738}.Release|x64.Build.0 = Release|Any CPU
 		{4682D613-F7D5-4D50-A9D1-BDDD64444738}.Release|x86.ActiveCfg = Release|Any CPU
 		{4682D613-F7D5-4D50-A9D1-BDDD64444738}.Release|x86.Build.0 = Release|Any CPU
+		{FD9C9FB3-958D-4DBE-AD87-4FC58490DE24}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{FD9C9FB3-958D-4DBE-AD87-4FC58490DE24}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{FD9C9FB3-958D-4DBE-AD87-4FC58490DE24}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FD9C9FB3-958D-4DBE-AD87-4FC58490DE24}.Debug|x64.Build.0 = Debug|Any CPU
+		{FD9C9FB3-958D-4DBE-AD87-4FC58490DE24}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FD9C9FB3-958D-4DBE-AD87-4FC58490DE24}.Debug|x86.Build.0 = Debug|Any CPU
+		{FD9C9FB3-958D-4DBE-AD87-4FC58490DE24}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{FD9C9FB3-958D-4DBE-AD87-4FC58490DE24}.Release|ARM64.Build.0 = Release|Any CPU
+		{FD9C9FB3-958D-4DBE-AD87-4FC58490DE24}.Release|x64.ActiveCfg = Release|Any CPU
+		{FD9C9FB3-958D-4DBE-AD87-4FC58490DE24}.Release|x64.Build.0 = Release|Any CPU
+		{FD9C9FB3-958D-4DBE-AD87-4FC58490DE24}.Release|x86.ActiveCfg = Release|Any CPU
+		{FD9C9FB3-958D-4DBE-AD87-4FC58490DE24}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0961BE1C-DDFB-46AB-935C-2FEAE2AD546C}
 	EndGlobalSection
 EndGlobal
