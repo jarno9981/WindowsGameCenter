@@ -8,6 +8,7 @@
     <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="AddGamePathDialog.xaml" />
     <None Remove="GameDetailsControl.xaml" />
   </ItemGroup>
   <ItemGroup>
@@ -15,9 +16,15 @@
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.1742" />
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.6.250205002" />
     <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="2.1.10" />
+    <PackageReference Include="System.Drawing.Common" Version="9.0.3" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GameCenter.Commun\GameCenter.Commun.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AddGamePathDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Page Update="GameDetailsControl.xaml">

@@ -118,22 +118,25 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="battle.net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\battle.net.ico;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Ea" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ea.ico;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="epic_games" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\epic_games.ico;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="gog.com" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gog.com.ico;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="Meta" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Meta.ico;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Steam" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Steam.ico;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="BattleNet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BattleNet.ico;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="EpicGames" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\EpicGames.ico;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Ea" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ea.ico;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>..\Resources\steam.ico;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Ubisoft" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ubisoft.ico;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>..\Resources\ubisoft.ico;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

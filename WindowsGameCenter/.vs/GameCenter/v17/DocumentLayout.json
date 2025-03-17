@@ -3,12 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FD9C9FB3-958D-4DBE-AD87-4FC58490DE24}|GameCenterFolders\\GameCenterFolders.csproj|c:\\users\\jarno\\desktop\\windowsgamecenter\\windowsgamecenter\\windowsgamecenter\\gamecenterfolders\\gamecenterfolders.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{FD9C9FB3-958D-4DBE-AD87-4FC58490DE24}|GameCenterFolders\\GameCenterFolders.csproj|solutionrelative:gamecenterfolders\\gamecenterfolders.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{5EDFAEE9-589E-4F41-951C-BF23CFCE4A5D}|GameCenter.Helpers\\GameCenter.Helpers.csproj|c:\\users\\jarno\\desktop\\windowsgamecenter\\windowsgamecenter\\windowsgamecenter\\gamecenter.helpers\\gamescanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EDFAEE9-589E-4F41-951C-BF23CFCE4A5D}|GameCenter.Helpers\\GameCenter.Helpers.csproj|solutionrelative:gamecenter.helpers\\gamescanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD9C9FB3-958D-4DBE-AD87-4FC58490DE24}|GameCenterFolders\\GameCenterFolders.csproj|c:\\users\\jarno\\desktop\\windowsgamecenter\\windowsgamecenter\\windowsgamecenter\\gamecenterfolders\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{FD9C9FB3-958D-4DBE-AD87-4FC58490DE24}|GameCenterFolders\\GameCenterFolders.csproj|solutionrelative:gamecenterfolders\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+      "AbsoluteMoniker": "D:0:0:{5EDFAEE9-589E-4F41-951C-BF23CFCE4A5D}|GameCenter.Helpers\\GameCenter.Helpers.csproj|c:\\users\\jarno\\desktop\\windowsgamecenter\\windowsgamecenter\\windowsgamecenter\\gamecenter.helpers\\gamedetailscontrol.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{5EDFAEE9-589E-4F41-951C-BF23CFCE4A5D}|GameCenter.Helpers\\GameCenter.Helpers.csproj|solutionrelative:gamecenter.helpers\\gamedetailscontrol.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EDFAEE9-589E-4F41-951C-BF23CFCE4A5D}|GameCenter.Helpers\\GameCenter.Helpers.csproj|c:\\users\\jarno\\desktop\\windowsgamecenter\\windowsgamecenter\\windowsgamecenter\\gamecenter.helpers\\gamedetailscontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5EDFAEE9-589E-4F41-951C-BF23CFCE4A5D}|GameCenter.Helpers\\GameCenter.Helpers.csproj|solutionrelative:gamecenter.helpers\\gamedetailscontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EDFAEE9-589E-4F41-951C-BF23CFCE4A5D}|GameCenter.Helpers\\GameCenter.Helpers.csproj|c:\\users\\jarno\\desktop\\windowsgamecenter\\windowsgamecenter\\windowsgamecenter\\gamecenter.helpers\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EDFAEE9-589E-4F41-951C-BF23CFCE4A5D}|GameCenter.Helpers\\GameCenter.Helpers.csproj|solutionrelative:gamecenter.helpers\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EDFAEE9-589E-4F41-951C-BF23CFCE4A5D}|GameCenter.Helpers\\GameCenter.Helpers.csproj|c:\\users\\jarno\\desktop\\windowsgamecenter\\windowsgamecenter\\windowsgamecenter\\gamecenter.helpers\\models\\iconextractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EDFAEE9-589E-4F41-951C-BF23CFCE4A5D}|GameCenter.Helpers\\GameCenter.Helpers.csproj|solutionrelative:gamecenter.helpers\\models\\iconextractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B278E242-A39F-47F5-8DDC-F38C08CE7193}|GameCenter\\GameCenter.csproj|c:\\users\\jarno\\desktop\\windowsgamecenter\\windowsgamecenter\\windowsgamecenter\\gamecenter\\gamepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B278E242-A39F-47F5-8DDC-F38C08CE7193}|GameCenter\\GameCenter.csproj|solutionrelative:gamecenter\\gamepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EDFAEE9-589E-4F41-951C-BF23CFCE4A5D}|GameCenter.Helpers\\GameCenter.Helpers.csproj|c:\\users\\jarno\\desktop\\windowsgamecenter\\windowsgamecenter\\windowsgamecenter\\gamecenter.helpers\\addgamepathdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EDFAEE9-589E-4F41-951C-BF23CFCE4A5D}|GameCenter.Helpers\\GameCenter.Helpers.csproj|solutionrelative:gamecenter.helpers\\addgamepathdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EDFAEE9-589E-4F41-951C-BF23CFCE4A5D}|GameCenter.Helpers\\GameCenter.Helpers.csproj|c:\\users\\jarno\\desktop\\windowsgamecenter\\windowsgamecenter\\windowsgamecenter\\gamecenter.helpers\\addgamepathdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5EDFAEE9-589E-4F41-951C-BF23CFCE4A5D}|GameCenter.Helpers\\GameCenter.Helpers.csproj|solutionrelative:gamecenter.helpers\\addgamepathdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B278E242-A39F-47F5-8DDC-F38C08CE7193}|GameCenter\\GameCenter.csproj|c:\\users\\jarno\\desktop\\windowsgamecenter\\windowsgamecenter\\windowsgamecenter\\gamecenter\\gamepage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{B278E242-A39F-47F5-8DDC-F38C08CE7193}|GameCenter\\GameCenter.csproj|solutionrelative:gamecenter\\gamepage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,35 +46,124 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Helpers\\Game.cs",
+              "RelativeDocumentMoniker": "GameCenter.Helpers\\Game.cs",
+              "ToolTip": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Helpers\\Game.cs*",
+              "RelativeToolTip": "GameCenter.Helpers\\Game.cs*",
+              "ViewState": "AgIAABgAAAAAAAAAAAA4wBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T15:23:31.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Resources.resx",
-              "DocumentMoniker": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenterFolders\\Properties\\Resources.resx",
-              "RelativeDocumentMoniker": "GameCenterFolders\\Properties\\Resources.resx",
-              "ToolTip": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenterFolders\\Properties\\Resources.resx",
-              "RelativeToolTip": "GameCenterFolders\\Properties\\Resources.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-03-14T10:34:26.367Z",
+              "Title": "GameDetailsControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Helpers\\GameDetailsControl.xaml.cs",
+              "RelativeDocumentMoniker": "GameCenter.Helpers\\GameDetailsControl.xaml.cs",
+              "ToolTip": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Helpers\\GameDetailsControl.xaml.cs",
+              "RelativeToolTip": "GameCenter.Helpers\\GameDetailsControl.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T15:22:11.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameDetailsControl.xaml",
+              "DocumentMoniker": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Helpers\\GameDetailsControl.xaml",
+              "RelativeDocumentMoniker": "GameCenter.Helpers\\GameDetailsControl.xaml",
+              "ToolTip": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Helpers\\GameDetailsControl.xaml",
+              "RelativeToolTip": "GameCenter.Helpers\\GameDetailsControl.xaml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAIwEUAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-17T15:21:57.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddGamePathDialog.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Helpers\\AddGamePathDialog.xaml.cs",
+              "RelativeDocumentMoniker": "GameCenter.Helpers\\AddGamePathDialog.xaml.cs",
+              "ToolTip": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Helpers\\AddGamePathDialog.xaml.cs",
+              "RelativeToolTip": "GameCenter.Helpers\\AddGamePathDialog.xaml.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAcwAkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T14:58:26.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddGamePathDialog.xaml",
+              "DocumentMoniker": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Helpers\\AddGamePathDialog.xaml",
+              "RelativeDocumentMoniker": "GameCenter.Helpers\\AddGamePathDialog.xaml",
+              "ToolTip": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Helpers\\AddGamePathDialog.xaml",
+              "RelativeToolTip": "GameCenter.Helpers\\AddGamePathDialog.xaml",
+              "ViewState": "AgIAACYAAAAAAAAAAAD4vzUAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-17T15:00:02.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GamePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter\\GamePage.xaml.cs",
+              "RelativeDocumentMoniker": "GameCenter\\GamePage.xaml.cs",
+              "ToolTip": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter\\GamePage.xaml.cs",
+              "RelativeToolTip": "GameCenter\\GamePage.xaml.cs",
+              "ViewState": "AgIAAP0AAAAAAAAAAAAvwBYBAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T14:56:43.338Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GameCenterFolders",
-              "DocumentMoniker": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenterFolders\\GameCenterFolders.csproj",
-              "RelativeDocumentMoniker": "GameCenterFolders\\GameCenterFolders.csproj",
-              "ToolTip": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenterFolders\\GameCenterFolders.csproj",
-              "RelativeToolTip": "GameCenterFolders\\GameCenterFolders.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-14T10:33:12.881Z",
+              "Title": "GameScanner.cs",
+              "DocumentMoniker": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Helpers\\GameScanner.cs",
+              "RelativeDocumentMoniker": "GameCenter.Helpers\\GameScanner.cs",
+              "ToolTip": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Helpers\\GameScanner.cs*",
+              "RelativeToolTip": "GameCenter.Helpers\\GameScanner.cs*",
+              "ViewState": "AgIAAAkBAAAAAAAAAAAAABoBAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T15:06:18.156Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IconExtractor.cs",
+              "DocumentMoniker": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Helpers\\Models\\IconExtractor.cs",
+              "RelativeDocumentMoniker": "GameCenter.Helpers\\Models\\IconExtractor.cs",
+              "ToolTip": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Helpers\\Models\\IconExtractor.cs",
+              "RelativeToolTip": "GameCenter.Helpers\\Models\\IconExtractor.cs",
+              "ViewState": "AgIAAN0AAAAAAAAAAAAAAA0AAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T15:13:34.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GamePage.xaml",
+              "DocumentMoniker": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter\\GamePage.xaml",
+              "RelativeDocumentMoniker": "GameCenter\\GamePage.xaml",
+              "ToolTip": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter\\GamePage.xaml",
+              "RelativeToolTip": "GameCenter\\GamePage.xaml",
+              "ViewState": "AgIAAMoAAAAAAAAAAAAIwAsBAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-17T14:56:42.322Z",
+              "EditorCaption": ""
             }
           ]
         }

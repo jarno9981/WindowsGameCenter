@@ -63,9 +63,9 @@ namespace GameCenterFolders.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] BattleNet {
+        internal static byte[] battle_net {
             get {
-                object obj = ResourceManager.GetObject("BattleNet", resourceCulture);
+                object obj = ResourceManager.GetObject("battle.net", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -83,9 +83,19 @@ namespace GameCenterFolders.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] EpicGames {
+        internal static byte[] epic_games {
             get {
-                object obj = ResourceManager.GetObject("EpicGames", resourceCulture);
+                object obj = ResourceManager.GetObject("epic_games", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] gog_com {
+            get {
+                object obj = ResourceManager.GetObject("gog.com", resourceCulture);
                 return ((byte[])(obj));
             }
         }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GameCenter.Helpers")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9163f53dab9e4db0a9b76523780e7bd177e8d3e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c939b1bcb3d295675d2122725b12bb5feabdde4")]
 [assembly: System.Reflection.AssemblyProductAttribute("GameCenter.Helpers")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GameCenter.Helpers")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

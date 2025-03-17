@@ -45,3 +45,9 @@ C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\Gam
 C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Helpers\bin\x64\Debug\net8.0-windows10.0.19041.0\GameCenter.Commun.pdb
 C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Helpers\bin\x64\Debug\net8.0-windows10.0.19041.0\GameCenter.Commun.pri
 C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Helpers\obj\x64\Debug\net8.0-windows10.0.19041.0\GameCenter.Commun.pri.xml
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Helpers\bin\x64\Debug\net8.0-windows10.0.19041.0\GameCenter.Helpers\AddGamePathDialog.xbf
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Helpers\bin\x64\Debug\net8.0-windows10.0.19041.0\GameCenter.Helpers\AddGamePathDialog.xaml
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Helpers\obj\x64\Debug\net8.0-windows10.0.19041.0\AddGamePathDialog.g.i.cs
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Helpers\obj\x64\Debug\net8.0-windows10.0.19041.0\AddGamePathDialog.g.cs
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Helpers\obj\x64\Debug\net8.0-windows10.0.19041.0\AddGamePathDialog.xaml
+C:\Users\Jarno\Desktop\WindowsGameCenter\WindowsGameCenter\WindowsGameCenter\GameCenter.Helpers\obj\x64\Debug\net8.0-windows10.0.19041.0\AddGamePathDialog.xbf

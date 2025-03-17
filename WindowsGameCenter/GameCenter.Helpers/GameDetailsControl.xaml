@@ -32,85 +32,72 @@
         </Storyboard>
     </UserControl.Resources>
 
-    <Grid x:Name="RootGrid" 
-          Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
-          BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
-          BorderThickness="1"
-          CornerRadius="8"
-          Padding="16"
-          PointerEntered="RootGrid_PointerEntered"
-          PointerExited="RootGrid_PointerExited"
-        >
-        <Grid.RenderTransform>
-            <ScaleTransform x:Name="CardTransform" ScaleX="1" ScaleY="1"/>
-        </Grid.RenderTransform>
-
+    <Grid Background="#202030" CornerRadius="8" BorderThickness="1" BorderBrush="#404060">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <!-- Normal Card Content -->
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="200"/>
-                <RowDefinition Height="Auto"/>
-            </Grid.RowDefinitions>
-
+        <Grid Grid.Row="0">
             <Image x:Name="GameImage" Stretch="UniformToFill"/>
+            <Grid Background="#80000000" VerticalAlignment="Bottom" Padding="12">
+                <StackPanel Orientation="Horizontal" Spacing="8">
+                    <FontIcon FontFamily="Segoe MDL2 Assets" 
+                            Glyph="&#xE7FC;" 
+                            Foreground="White"
+                            FontSize="12"/>
+                    <TextBlock Text="{x:Bind Game.Launcher}" 
+                             Foreground="White" 
+                             FontSize="12" 
+                             Opacity="0.8"/>
+                </StackPanel>
+            </Grid>
 
-            <StackPanel Grid.Row="1" Margin="0,8,0,0" Spacing="4">
-                <TextBlock x:Name="GameTitle" Style="{ThemeResource SubtitleTextBlockStyle}"/>
-                <TextBlock x:Name="GameLauncher" Style="{ThemeResource CaptionTextBlockStyle}"/>
-            </StackPanel>
+            <!-- Play Button Overlay -->
+            <Button x:Name="PlayButton" 
+                  Click="PlayButton_Click"
+                  HorizontalAlignment="Center" 
+                  VerticalAlignment="Center"
+                  Background="#80000000"
+                  BorderBrush="#FFFFFF"
+                  Opacity="0"
+                  PointerEntered="PlayButton_PointerEntered"
+                  PointerExited="PlayButton_PointerExited">
+                <StackPanel Orientation="Horizontal" Spacing="8">
+                    <FontIcon FontFamily="Segoe MDL2 Assets" 
+                            Glyph="&#xE768;" 
+                            Foreground="White"/>
+                    <TextBlock Text="Play" Foreground="White"/>
+                </StackPanel>
+            </Button>
         </Grid>
 
-        <!-- Expanded Content -->
-        <Grid x:Name="ExpandedContent" Grid.Row="1" Opacity="0">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-            </Grid.RowDefinitions>
+        <StackPanel Grid.Row="1" Padding="12">
+            <TextBlock Text="{x:Bind Game.Title}" 
+                     Foreground="White"
+                     FontWeight="SemiBold" 
+                     TextWrapping="NoWrap" 
+                     TextTrimming="CharacterEllipsis"/>
 
-            <TextBlock x:Name="GameDescription" 
-                       Style="{ThemeResource BodyTextBlockStyle}" 
-                       TextWrapping="Wrap"
-                       Margin="0,16,0,0"/>
+            <TextBlock x:Name="DeveloperText"
+                     Text="{x:Bind Game.Developer}" 
+                     Foreground="#B0B0C0"
+                     FontSize="12" 
+                     Opacity="0.7"
+                     TextWrapping="NoWrap" 
+                     TextTrimming="CharacterEllipsis"
+                     Visibility="Collapsed"/>
 
-            <StackPanel Grid.Row="1" Margin="0,16,0,0">
-                <TextBlock Text="Screenshots" Style="{ThemeResource SubtitleTextBlockStyle}"/>
-                <ScrollViewer HorizontalScrollMode="Enabled" 
-                              VerticalScrollMode="Disabled"
-                              HorizontalScrollBarVisibility="Auto"
-                              Margin="0,8,0,0">
-                    <StackPanel x:Name="ScreenshotsPanel" 
-                                Orientation="Horizontal" 
-                                Spacing="8"/>
-                </ScrollViewer>
+            <StackPanel Orientation="Horizontal" Spacing="8" Margin="0,4,0,0">
+                <FontIcon FontFamily="Segoe MDL2 Assets" 
+                        Glyph="&#xE8D5;" 
+                        Foreground="#B0B0C0"
+                        FontSize="12"/>
+                <TextBlock x:Name="LastPlayedText"
+                         Foreground="#B0B0C0"
+                         FontSize="12" 
+                         Opacity="0.7"/>
             </StackPanel>
-
-            <StackPanel Grid.Row="2" Margin="0,16,0,0">
-                <TextBlock Text="Available DLC" Style="{ThemeResource SubtitleTextBlockStyle}"/>
-                <ListView x:Name="DLCListView" 
-                          SelectionMode="None" 
-                          IsItemClickEnabled="False"
-                          Margin="0,8,0,0">
-                   
-                </ListView>
-            </StackPanel>
-
-            <StackPanel Grid.Row="3" 
-                        Orientation="Horizontal" 
-                        Spacing="8"
-                        Margin="0,16,0,0">
-                <Button Content="Play" 
-                       
-                        Style="{ThemeResource AccentButtonStyle}"/>
-                <Button Content="Delete" 
-                        />
-            </StackPanel>
-        </Grid>
+        </StackPanel>
     </Grid>
 </UserControl>

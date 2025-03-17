@@ -174,27 +174,35 @@ namespace GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo
         
         private void InitTypeTables()
         {
-            _typeNameTable = new string[9];
-            _typeNameTable[0] = "GameCenter.Helpers.GameDetailsControl";
-            _typeNameTable[1] = "Microsoft.UI.Xaml.Controls.UserControl";
-            _typeNameTable[2] = "GameCenter.Helpers.Game";
-            _typeNameTable[3] = "Object";
-            _typeNameTable[4] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
-            _typeNameTable[5] = "Microsoft.UI.Xaml.DependencyObject";
-            _typeNameTable[6] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
-            _typeNameTable[7] = "Int32";
-            _typeNameTable[8] = "Boolean";
+            _typeNameTable = new string[13];
+            _typeNameTable[0] = "GameCenter.Helpers.AddGamePathDialog";
+            _typeNameTable[1] = "Microsoft.UI.Xaml.Controls.ContentDialog";
+            _typeNameTable[2] = "Microsoft.UI.Xaml.Controls.ContentControl";
+            _typeNameTable[3] = "String";
+            _typeNameTable[4] = "GameCenter.Helpers.GameDetailsControl";
+            _typeNameTable[5] = "Microsoft.UI.Xaml.Controls.UserControl";
+            _typeNameTable[6] = "GameCenter.Helpers.Game";
+            _typeNameTable[7] = "Object";
+            _typeNameTable[8] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
+            _typeNameTable[9] = "Microsoft.UI.Xaml.DependencyObject";
+            _typeNameTable[10] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
+            _typeNameTable[11] = "Int32";
+            _typeNameTable[12] = "Boolean";
 
-            _typeTable = new global::System.Type[9];
-            _typeTable[0] = typeof(global::GameCenter.Helpers.GameDetailsControl);
-            _typeTable[1] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
-            _typeTable[2] = typeof(global::GameCenter.Helpers.Game);
-            _typeTable[3] = typeof(global::System.Object);
-            _typeTable[4] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
-            _typeTable[5] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
-            _typeTable[6] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
-            _typeTable[7] = typeof(global::System.Int32);
-            _typeTable[8] = typeof(global::System.Boolean);
+            _typeTable = new global::System.Type[13];
+            _typeTable[0] = typeof(global::GameCenter.Helpers.AddGamePathDialog);
+            _typeTable[1] = typeof(global::Microsoft.UI.Xaml.Controls.ContentDialog);
+            _typeTable[2] = typeof(global::Microsoft.UI.Xaml.Controls.ContentControl);
+            _typeTable[3] = typeof(global::System.String);
+            _typeTable[4] = typeof(global::GameCenter.Helpers.GameDetailsControl);
+            _typeTable[5] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
+            _typeTable[6] = typeof(global::GameCenter.Helpers.Game);
+            _typeTable[7] = typeof(global::System.Object);
+            _typeTable[8] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
+            _typeTable[9] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
+            _typeTable[10] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
+            _typeTable[11] = typeof(global::System.Int32);
+            _typeTable[12] = typeof(global::System.Boolean);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -229,14 +237,15 @@ namespace GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_GameDetailsControl() { return new global::GameCenter.Helpers.GameDetailsControl(); }
-        private object Activate_2_Game() { return new global::GameCenter.Helpers.Game(); }
-        private object Activate_4_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
-        private void StaticInitializer_0_GameDetailsControl() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::GameCenter.Helpers.GameDetailsControl).TypeHandle);
-        private void StaticInitializer_2_Game() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::GameCenter.Helpers.Game).TypeHandle);
-        private void StaticInitializer_4_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
-        private void StaticInitializer_6_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
-        private void VectorAdd_6_IList(object instance, object item)
+        private object Activate_4_GameDetailsControl() { return new global::GameCenter.Helpers.GameDetailsControl(); }
+        private object Activate_6_Game() { return new global::GameCenter.Helpers.Game(); }
+        private object Activate_8_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
+        private void StaticInitializer_0_AddGamePathDialog() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::GameCenter.Helpers.AddGamePathDialog).TypeHandle);
+        private void StaticInitializer_4_GameDetailsControl() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::GameCenter.Helpers.GameDetailsControl).TypeHandle);
+        private void StaticInitializer_6_Game() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::GameCenter.Helpers.Game).TypeHandle);
+        private void StaticInitializer_8_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
+        private void StaticInitializer_10_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
+        private void VectorAdd_10_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.Controls.TreeViewNode>)instance;
             var newItem = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)item;
@@ -253,35 +262,57 @@ namespace GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  GameCenter.Helpers.GameDetailsControl
+            case 0:   //  GameCenter.Helpers.AddGamePathDialog
+                userType = new global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ContentDialog"));
+                userType.StaticInitializer = StaticInitializer_0_AddGamePathDialog;
+                userType.AddMemberName("GameName");
+                userType.AddMemberName("GamePath");
+                userType.AddMemberName("LauncherType");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 1:   //  Microsoft.UI.Xaml.Controls.ContentDialog
+                xamlType = new global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 2:   //  Microsoft.UI.Xaml.Controls.ContentControl
+                xamlType = new global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 3:   //  String
+                xamlType = new global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 4:   //  GameCenter.Helpers.GameDetailsControl
                 userType = new global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_0_GameDetailsControl;
-                userType.StaticInitializer = StaticInitializer_0_GameDetailsControl;
+                userType.Activator = Activate_4_GameDetailsControl;
+                userType.StaticInitializer = StaticInitializer_4_GameDetailsControl;
                 userType.AddMemberName("Game");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 1:   //  Microsoft.UI.Xaml.Controls.UserControl
+            case 5:   //  Microsoft.UI.Xaml.Controls.UserControl
                 xamlType = new global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 2:   //  GameCenter.Helpers.Game
+            case 6:   //  GameCenter.Helpers.Game
                 userType = new global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.StaticInitializer = StaticInitializer_2_Game;
+                userType.StaticInitializer = StaticInitializer_6_Game;
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 3:   //  Object
+            case 7:   //  Object
                 xamlType = new global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 4:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
+            case 8:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
                 userType = new global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_4_TreeViewNode;
-                userType.StaticInitializer = StaticInitializer_4_TreeViewNode;
+                userType.Activator = Activate_8_TreeViewNode;
+                userType.StaticInitializer = StaticInitializer_8_TreeViewNode;
                 userType.AddMemberName("Children");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("Depth");
@@ -293,23 +324,23 @@ namespace GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 5:   //  Microsoft.UI.Xaml.DependencyObject
+            case 9:   //  Microsoft.UI.Xaml.DependencyObject
                 xamlType = new global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 6:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
+            case 10:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
                 userType = new global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.StaticInitializer = StaticInitializer_6_IList;
-                userType.CollectionAdd = VectorAdd_6_IList;
+                userType.StaticInitializer = StaticInitializer_10_IList;
+                userType.CollectionAdd = VectorAdd_10_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 7:   //  Int32
+            case 11:   //  Int32
                 xamlType = new global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 8:   //  Boolean
+            case 12:   //  Boolean
                 xamlType = new global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
@@ -371,62 +402,77 @@ namespace GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo
             return foundXamlType;
         }
 
-        private object get_0_GameDetailsControl_Game(object instance)
+        private object get_0_AddGamePathDialog_GameName(object instance)
+        {
+            var that = (global::GameCenter.Helpers.AddGamePathDialog)instance;
+            return that.GameName;
+        }
+        private object get_1_AddGamePathDialog_GamePath(object instance)
+        {
+            var that = (global::GameCenter.Helpers.AddGamePathDialog)instance;
+            return that.GamePath;
+        }
+        private object get_2_AddGamePathDialog_LauncherType(object instance)
+        {
+            var that = (global::GameCenter.Helpers.AddGamePathDialog)instance;
+            return that.LauncherType;
+        }
+        private object get_3_GameDetailsControl_Game(object instance)
         {
             var that = (global::GameCenter.Helpers.GameDetailsControl)instance;
             return that.Game;
         }
-        private void set_0_GameDetailsControl_Game(object instance, object Value)
+        private void set_3_GameDetailsControl_Game(object instance, object Value)
         {
             var that = (global::GameCenter.Helpers.GameDetailsControl)instance;
             that.Game = (global::GameCenter.Helpers.Game)Value;
         }
-        private object get_1_TreeViewNode_Children(object instance)
+        private object get_4_TreeViewNode_Children(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Children;
         }
-        private object get_2_TreeViewNode_Content(object instance)
+        private object get_5_TreeViewNode_Content(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Content;
         }
-        private void set_2_TreeViewNode_Content(object instance, object Value)
+        private void set_5_TreeViewNode_Content(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.Content = (global::System.Object)Value;
         }
-        private object get_3_TreeViewNode_Depth(object instance)
+        private object get_6_TreeViewNode_Depth(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Depth;
         }
-        private object get_4_TreeViewNode_HasChildren(object instance)
+        private object get_7_TreeViewNode_HasChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasChildren;
         }
-        private object get_5_TreeViewNode_HasUnrealizedChildren(object instance)
+        private object get_8_TreeViewNode_HasUnrealizedChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasUnrealizedChildren;
         }
-        private void set_5_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
+        private void set_8_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.HasUnrealizedChildren = (global::System.Boolean)Value;
         }
-        private object get_6_TreeViewNode_IsExpanded(object instance)
+        private object get_9_TreeViewNode_IsExpanded(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.IsExpanded;
         }
-        private void set_6_TreeViewNode_IsExpanded(object instance, object Value)
+        private void set_9_TreeViewNode_IsExpanded(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.IsExpanded = (global::System.Boolean)Value;
         }
-        private object get_7_TreeViewNode_Parent(object instance)
+        private object get_10_TreeViewNode_Parent(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Parent;
@@ -439,57 +485,75 @@ namespace GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo
 
             switch (longMemberName)
             {
+            case "GameCenter.Helpers.AddGamePathDialog.GameName":
+                userType = (global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GameCenter.Helpers.AddGamePathDialog");
+                xamlMember = new global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlMember(this, "GameName", "String");
+                xamlMember.Getter = get_0_AddGamePathDialog_GameName;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "GameCenter.Helpers.AddGamePathDialog.GamePath":
+                userType = (global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GameCenter.Helpers.AddGamePathDialog");
+                xamlMember = new global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlMember(this, "GamePath", "String");
+                xamlMember.Getter = get_1_AddGamePathDialog_GamePath;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "GameCenter.Helpers.AddGamePathDialog.LauncherType":
+                userType = (global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GameCenter.Helpers.AddGamePathDialog");
+                xamlMember = new global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlMember(this, "LauncherType", "String");
+                xamlMember.Getter = get_2_AddGamePathDialog_LauncherType;
+                xamlMember.SetIsReadOnly();
+                break;
             case "GameCenter.Helpers.GameDetailsControl.Game":
                 userType = (global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GameCenter.Helpers.GameDetailsControl");
                 xamlMember = new global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlMember(this, "Game", "GameCenter.Helpers.Game");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_0_GameDetailsControl_Game;
-                xamlMember.Setter = set_0_GameDetailsControl_Game;
+                xamlMember.Getter = get_3_GameDetailsControl_Game;
+                xamlMember.Setter = set_3_GameDetailsControl_Game;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Children":
                 userType = (global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlMember(this, "Children", "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>");
-                xamlMember.Getter = get_1_TreeViewNode_Children;
+                xamlMember.Getter = get_4_TreeViewNode_Children;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Content":
                 userType = (global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlMember(this, "Content", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_2_TreeViewNode_Content;
-                xamlMember.Setter = set_2_TreeViewNode_Content;
+                xamlMember.Getter = get_5_TreeViewNode_Content;
+                xamlMember.Setter = set_5_TreeViewNode_Content;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Depth":
                 userType = (global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlMember(this, "Depth", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_3_TreeViewNode_Depth;
+                xamlMember.Getter = get_6_TreeViewNode_Depth;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasChildren":
                 userType = (global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlMember(this, "HasChildren", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_4_TreeViewNode_HasChildren;
+                xamlMember.Getter = get_7_TreeViewNode_HasChildren;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasUnrealizedChildren":
                 userType = (global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlMember(this, "HasUnrealizedChildren", "Boolean");
-                xamlMember.Getter = get_5_TreeViewNode_HasUnrealizedChildren;
-                xamlMember.Setter = set_5_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Getter = get_8_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Setter = set_8_TreeViewNode_HasUnrealizedChildren;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.IsExpanded":
                 userType = (global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_6_TreeViewNode_IsExpanded;
-                xamlMember.Setter = set_6_TreeViewNode_IsExpanded;
+                xamlMember.Getter = get_9_TreeViewNode_IsExpanded;
+                xamlMember.Setter = set_9_TreeViewNode_IsExpanded;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Parent":
                 userType = (global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::GameCenter.Helpers.GameCenter_Helpers_XamlTypeInfo.XamlMember(this, "Parent", "Microsoft.UI.Xaml.Controls.TreeViewNode");
-                xamlMember.Getter = get_7_TreeViewNode_Parent;
+                xamlMember.Getter = get_10_TreeViewNode_Parent;
                 xamlMember.SetIsReadOnly();
                 break;
             }

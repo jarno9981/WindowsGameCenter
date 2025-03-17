@@ -6,50 +6,265 @@
     xmlns:helper="using:GameCenter.Helpers"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="using:GameCenter.Helpers.Models"
     mc:Ignorable="d"
     Background="Transparent">
 
     <Grid>
         <ScrollViewer x:Name="MainScrollViewer">
-            <StackPanel Spacing="24" Margin="0,0,0,0">
-                <!-- Recommended Games Section -->
-                <StackPanel Spacing="16">
-                    <TextBlock Text="Recommended Games" 
-                               Style="{ThemeResource TitleLargeTextBlockStyle}"
-                               Margin="0,0,0,8"/>
+            <StackPanel Spacing="24" Margin="24">
+                <!-- Header with Refresh Button -->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
 
-                    <ItemsRepeater ItemsSource="{x:Bind RecommendedGames}">
-                        <ItemsRepeater.Layout>
-                            <StackLayout Orientation="Horizontal" Spacing="16"/>
-                        </ItemsRepeater.Layout>
-                        <ItemsRepeater.ItemTemplate>
-                            <DataTemplate x:DataType="helper:Game">
-                                <helper:GameDetailsControl Game="{x:Bind}" Width="300" Height="400"/>
-                            </DataTemplate>
-                        </ItemsRepeater.ItemTemplate>
-                    </ItemsRepeater>
+                    <TextBlock Text="Game Center" 
+                               Style="{ThemeResource TitleLargeTextBlockStyle}"
+                               Foreground="White"/>
+
+                    <Button x:Name="RefreshButton" 
+                            Grid.Column="1"
+                            Click="RefreshButton_Click">
+                        <StackPanel Orientation="Horizontal" Spacing="8">
+                            <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE72C;"/>
+                            <TextBlock Text="Refresh"/>
+                        </StackPanel>
+                    </Button>
+                </Grid>
+
+                <!-- Permission Warning -->
+                <InfoBar x:Name="PermissionWarning"
+                         IsOpen="False"
+                         Severity="Warning"
+                         Title="Limited Access"
+                         Margin="0,0,0,16"
+                         Background="#554400"
+                         BorderBrush="#FFCC00"
+                         Foreground="White"
+                         IsClosable="False">
+                    <InfoBar.Content>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Text="This app has limited access to some game folders. Some games may not be detected or may show incomplete information."
+                                       TextWrapping="Wrap"
+                                       Grid.Row="0"
+                                       Margin="0,0,0,8"/>
+
+                            <Button Content="Grant Full Permission"
+                                    Click="RequestPermissionButton_Click"
+                                    Grid.Row="1"
+                                    Background="#FFCC00"
+                                    Foreground="Black"/>
+                        </Grid>
+                    </InfoBar.Content>
+                </InfoBar>
+
+                <!-- Loading Indicator -->
+                <ProgressRing x:Name="LoadingIndicator" 
+                              IsActive="False" 
+                              HorizontalAlignment="Center"
+                              Margin="0,24"/>
+
+                <!-- Error Message -->
+                <TextBlock x:Name="ErrorMessage"
+                           Visibility="Collapsed"
+                           Foreground="Red"
+                           TextWrapping="Wrap"
+                           Margin="0,12"/>
+
+                <!-- No Games Message -->
+                <StackPanel x:Name="NoGamesMessage" 
+                            Visibility="Collapsed"
+                            HorizontalAlignment="Center"
+                            Margin="0,48">
+                    <FontIcon FontFamily="Segoe MDL2 Assets" 
+                              Glyph="&#xE7FC;" 
+                              FontSize="48"
+                              HorizontalAlignment="Center"
+                              Opacity="0.5"
+                              Margin="0,0,0,16"/>
+                    <TextBlock Text="No games found" 
+                               Style="{ThemeResource SubtitleTextBlockStyle}"
+                               HorizontalAlignment="Center"/>
+                    <TextBlock Text="Add custom launcher paths to scan for games" 
+                               Style="{ThemeResource BodyTextBlockStyle}"
+                               HorizontalAlignment="Center"
+                               Opacity="0.7"
+                               Margin="0,8,0,0"/>
                 </StackPanel>
 
-                <!-- Explore Games Section -->
-                <StackPanel Spacing="16">
-                    <TextBlock Text="Explore Games" 
-                               Style="{ThemeResource TitleLargeTextBlockStyle}"
-                               Margin="0,0,0,8"/>
+                <!-- Steam Games Section -->
+                <StackPanel x:Name="SteamGamesSection" Spacing="16" Visibility="Collapsed">
+                    <TextBlock Text="Steam Games" 
+                               Style="{ThemeResource TitleTextBlockStyle}"
+                               Foreground="White"/>
 
-                    <ItemsRepeater ItemsSource="{x:Bind ExploreGames}">
-                        <ItemsRepeater.Layout>
-                            <UniformGridLayout MinItemWidth="200" MinItemHeight="300" 
-                                               ItemsStretch="Fill" 
-                                               MaximumRowsOrColumns="4"/>
-                        </ItemsRepeater.Layout>
-                        <ItemsRepeater.ItemTemplate>
+                    <GridView ItemsSource="{x:Bind SteamGames}"
+                              SelectionMode="None"
+                              IsItemClickEnabled="True">
+                        <GridView.ItemTemplate>
                             <DataTemplate x:DataType="helper:Game">
-                                <helper:GameDetailsControl Game="{x:Bind}" Width="200" Height="300"/>
+                                <helper:GameDetailsControl Game="{x:Bind}" 
+                                                          Width="300" 
+                                                          Height="200"
+                                                          Margin="8"/>
                             </DataTemplate>
-                        </ItemsRepeater.ItemTemplate>
-                    </ItemsRepeater>
+                        </GridView.ItemTemplate>
+                    </GridView>
                 </StackPanel>
+
+                <!-- Xbox Games Section -->
+                <StackPanel x:Name="XboxGamesSection" Spacing="16" Visibility="Collapsed">
+                    <TextBlock Text="Xbox Games" 
+                               Style="{ThemeResource TitleTextBlockStyle}"
+                               Foreground="White"/>
+
+                    <GridView ItemsSource="{x:Bind XboxGames}"
+                              SelectionMode="None"
+                              IsItemClickEnabled="True">
+                        <GridView.ItemTemplate>
+                            <DataTemplate x:DataType="helper:Game">
+                                <helper:GameDetailsControl Game="{x:Bind}" 
+                                                          Width="300" 
+                                                          Height="200"
+                                                          Margin="8"/>
+                            </DataTemplate>
+                        </GridView.ItemTemplate>
+                    </GridView>
+                </StackPanel>
+
+                <!-- Epic Games Section -->
+                <StackPanel x:Name="EpicGamesSection" Spacing="16" Visibility="Collapsed">
+                    <TextBlock Text="Epic Games" 
+                               Style="{ThemeResource TitleTextBlockStyle}"
+                               Foreground="White"/>
+
+                    <GridView ItemsSource="{x:Bind EpicGames}"
+                              SelectionMode="None"
+                              IsItemClickEnabled="True">
+                        <GridView.ItemTemplate>
+                            <DataTemplate x:DataType="helper:Game">
+                                <helper:GameDetailsControl Game="{x:Bind}" 
+                                                          Width="300" 
+                                                          Height="200"
+                                                          Margin="8"/>
+                            </DataTemplate>
+                        </GridView.ItemTemplate>
+                    </GridView>
+                </StackPanel>
+
+                <!-- Other Games Section -->
+                <StackPanel x:Name="OtherGamesSection" Spacing="16" Visibility="Collapsed">
+                    <TextBlock Text="Other Games" 
+                               Style="{ThemeResource TitleTextBlockStyle}"
+                               Foreground="White"/>
+
+                    <GridView ItemsSource="{x:Bind OtherGames}"
+                              SelectionMode="None"
+                              IsItemClickEnabled="True">
+                        <GridView.ItemTemplate>
+                            <DataTemplate x:DataType="helper:Game">
+                                <helper:GameDetailsControl Game="{x:Bind}" 
+                                                          Width="300" 
+                                                          Height="200"
+                                                          Margin="8"/>
+                            </DataTemplate>
+                        </GridView.ItemTemplate>
+                    </GridView>
+                </StackPanel>
+
+                <!-- Custom Paths Section -->
+                <StackPanel x:Name="CustomPathsSection" Spacing="16" Margin="0,24,0,0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Text="Custom Launcher Paths" 
+                                   Style="{ThemeResource TitleTextBlockStyle}"
+                                   Foreground="White"/>
+
+                        <Button x:Name="AddPathButton" 
+                                Grid.Column="1"
+                                Click="AddPathButton_Click">
+                            <StackPanel Orientation="Horizontal" Spacing="8">
+                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE710;"/>
+                                <TextBlock Text="Add Launcher Path"/>
+                            </StackPanel>
+                        </Button>
+                    </Grid>
+
+                    <InfoBar Title="Custom Launcher Paths"
+                             IsOpen="True"
+                             Severity="Informational"
+                             Message="Add custom launcher paths to scan for games. The entire folder structure will be scanned, excluding specific folders like 'GameSave'."
+                             IsClosable="False"/>
+
+                    <ListView x:Name="CustomPathsListView"
+                              SelectionMode="None"
+                              ItemsSource="{x:Bind CustomPaths}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate x:DataType="models:GamePath">
+                                <Grid Padding="12" Background="{ThemeResource CardBackgroundFillColorDefaultBrush}" CornerRadius="4">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <FontIcon FontFamily="Segoe MDL2 Assets" 
+                                              Glyph="&#xE7FC;" 
+                                              Margin="0,0,12,0"/>
+
+                                    <StackPanel Grid.Column="1">
+                                        <TextBlock Text="{x:Bind Name}" 
+                                                   FontWeight="SemiBold"/>
+                                        <TextBlock Text="{x:Bind Path}" 
+                                                   TextWrapping="NoWrap"
+                                                   TextTrimming="CharacterEllipsis"
+                                                   Opacity="0.7"
+                                                   FontSize="12"/>
+                                        <TextBlock Text="{x:Bind LauncherType}" 
+                                                   Opacity="0.7"
+                                                   FontSize="12"/>
+                                    </StackPanel>
+
+                                    <Button Grid.Column="2"
+                                            Click="RemovePathButton_Click"
+                                            Tag="{x:Bind Id}"
+                                            Background="Transparent"
+                                            BorderThickness="0">
+                                        <FontIcon FontFamily="Segoe MDL2 Assets" 
+                                                  Glyph="&#xE74D;"
+                                                  Foreground="Red"/>
+                                    </Button>
+                                </Grid>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+
+                        <ListView.ItemContainerStyle>
+                            <Style TargetType="ListViewItem">
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                                <Setter Property="Margin" Value="0,0,0,8"/>
+                            </Style>
+                        </ListView.ItemContainerStyle>
+                    </ListView>
+                </StackPanel>
+
+                <!-- Footer -->
+                <TextBlock Text="Game detection scans the entire folder structure of custom launcher paths, excluding specific folders like 'GameSave'." 
+                           Style="{ThemeResource CaptionTextBlockStyle}"
+                           Opacity="0.7"
+                           Margin="0,16,0,0"/>
             </StackPanel>
         </ScrollViewer>
     </Grid>
 </Page>
+

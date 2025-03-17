@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "2xvwShy90Hw=",
+  "dgSpecHash": "PeH1NVOz74Y=",
   "success": true,
   "projectFilePath": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter\\GameCenter.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jarno\\.nuget\\packages\\microsoft.data.sqlite.core\\9.0.2\\microsoft.data.sqlite.core.9.0.2.nupkg.sha512",
     "C:\\Users\\Jarno\\.nuget\\packages\\microsoft.web.webview2\\1.0.2903.40\\microsoft.web.webview2.1.0.2903.40.nupkg.sha512",
+    "C:\\Users\\Jarno\\.nuget\\packages\\microsoft.win32.systemevents\\9.0.3\\microsoft.win32.systemevents.9.0.3.nupkg.sha512",
     "C:\\Users\\Jarno\\.nuget\\packages\\microsoft.windows.cswin32\\0.3.183\\microsoft.windows.cswin32.0.3.183.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages\\microsoft.windows.sdk.buildtools\\10.0.26100.1742\\microsoft.windows.sdk.buildtools.10.0.26100.1742.nupkg.sha512",
     "C:\\Users\\Jarno\\.nuget\\packages\\microsoft.windows.sdk.win32docs\\0.1.42-alpha\\microsoft.windows.sdk.win32docs.0.1.42-alpha.nupkg.sha512",
@@ -17,6 +18,7 @@
     "C:\\Users\\Jarno\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.10\\sqlitepclraw.lib.e_sqlite3.2.1.10.nupkg.sha512",
     "C:\\Users\\Jarno\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.10\\sqlitepclraw.provider.e_sqlite3.2.1.10.nupkg.sha512",
     "C:\\Users\\Jarno\\.nuget\\packages\\steamworks.net\\2024.8.0\\steamworks.net.2024.8.0.nupkg.sha512",
+    "C:\\Users\\Jarno\\.nuget\\packages\\system.drawing.common\\9.0.3\\system.drawing.common.9.0.3.nupkg.sha512",
     "C:\\Users\\Jarno\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\Jarno\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\8.0.13\\microsoft.netcore.app.runtime.win-x86.8.0.13.nupkg.sha512",
     "C:\\Users\\Jarno\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.57\\microsoft.windows.sdk.net.ref.10.0.19041.57.nupkg.sha512",
