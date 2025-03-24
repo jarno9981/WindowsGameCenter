@@ -46,34 +46,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Game.cs",
-              "DocumentMoniker": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Helpers\\Game.cs",
-              "RelativeDocumentMoniker": "GameCenter.Helpers\\Game.cs",
-              "ToolTip": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Helpers\\Game.cs*",
-              "RelativeToolTip": "GameCenter.Helpers\\Game.cs*",
-              "ViewState": "AgIAABgAAAAAAAAAAAA4wBEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T15:23:31.469Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GameDetailsControl.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Helpers\\GameDetailsControl.xaml.cs",
-              "RelativeDocumentMoniker": "GameCenter.Helpers\\GameDetailsControl.xaml.cs",
-              "ToolTip": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Helpers\\GameDetailsControl.xaml.cs",
-              "RelativeToolTip": "GameCenter.Helpers\\GameDetailsControl.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T15:22:11.204Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -115,6 +89,32 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameScanner.cs",
+              "DocumentMoniker": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Helpers\\GameScanner.cs",
+              "RelativeDocumentMoniker": "GameCenter.Helpers\\GameScanner.cs",
+              "ToolTip": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Helpers\\GameScanner.cs",
+              "RelativeToolTip": "GameCenter.Helpers\\GameScanner.cs",
+              "ViewState": "AgIAAAkBAAAAAAAAAAAAABoBAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T15:06:18.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameDetailsControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Helpers\\GameDetailsControl.xaml.cs",
+              "RelativeDocumentMoniker": "GameCenter.Helpers\\GameDetailsControl.xaml.cs",
+              "ToolTip": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Helpers\\GameDetailsControl.xaml.cs",
+              "RelativeToolTip": "GameCenter.Helpers\\GameDetailsControl.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T15:22:11.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
               "Title": "GamePage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter\\GamePage.xaml.cs",
@@ -128,15 +128,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GameScanner.cs",
-              "DocumentMoniker": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Helpers\\GameScanner.cs",
-              "RelativeDocumentMoniker": "GameCenter.Helpers\\GameScanner.cs",
-              "ToolTip": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Helpers\\GameScanner.cs*",
-              "RelativeToolTip": "GameCenter.Helpers\\GameScanner.cs*",
-              "ViewState": "AgIAAAkBAAAAAAAAAAAAABoBAAA6AAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Helpers\\Game.cs",
+              "RelativeDocumentMoniker": "GameCenter.Helpers\\Game.cs",
+              "ToolTip": "C:\\Users\\Jarno\\Desktop\\WindowsGameCenter\\WindowsGameCenter\\WindowsGameCenter\\GameCenter.Helpers\\Game.cs",
+              "RelativeToolTip": "GameCenter.Helpers\\Game.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAA4wBEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T15:06:18.156Z",
+              "WhenOpened": "2025-03-17T15:23:31.469Z",
               "EditorCaption": ""
             },
             {
