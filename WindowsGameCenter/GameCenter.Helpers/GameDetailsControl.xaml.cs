@@ -7,6 +7,13 @@ using System;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Windows.System;
+using GameCenter.Helpers.Models;
+using System.IO;
+using System.Diagnostics;
+using Microsoft.UI.Text;
+using Microsoft.UI.Xaml.Controls.Primitives;
+using Microsoft.UI.Xaml.Media;
+using Microsoft.UI;
 
 namespace GameCenter.Helpers
 {
@@ -14,6 +21,7 @@ namespace GameCenter.Helpers
     {
         private static readonly string _defaultImageUrl = "ms-appx:///Assets/GamePlaceholder.png";
         private DateTimeConverter _dateTimeConverter = new DateTimeConverter();
+        private GameScanner _gameScanner;
 
         public static readonly DependencyProperty GameProperty =
             DependencyProperty.Register("Game", typeof(Game), typeof(GameDetailsControl), new PropertyMetadata(null, OnGameChanged));
@@ -27,6 +35,7 @@ namespace GameCenter.Helpers
         public GameDetailsControl()
         {
             this.InitializeComponent();
+            _gameScanner = new GameScanner();
         }
 
         private static void OnGameChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
@@ -87,7 +96,7 @@ namespace GameCenter.Helpers
                     }
                     catch (Exception ex)
                     {
-                        System.Diagnostics.Debug.WriteLine($"Error loading image from URL {game.ImageUrl}: {ex.Message}");
+                        Debug.WriteLine($"Error loading image from URL {game.ImageUrl}: {ex.Message}");
                         // Continue to fallback
                     }
                 }
@@ -98,7 +107,7 @@ namespace GameCenter.Helpers
             catch (Exception ex)
             {
                 // Log error and show default image
-                System.Diagnostics.Debug.WriteLine($"Error loading game image: {ex.Message}");
+                Debug.WriteLine($"Error loading game image: {ex.Message}");
 
                 // Set a default image
                 SetDefaultImage(game);
@@ -138,7 +147,6 @@ namespace GameCenter.Helpers
             game.ImageSource = defaultImage;
         }
 
-        // Add the missing event handlers
         private async void PlayButton_Click(object sender, RoutedEventArgs e)
         {
             if (Game == null)
@@ -234,17 +242,17 @@ namespace GameCenter.Helpers
                     if (match.Success)
                     {
                         string steamPath = match.Groups[1].Value;
-                        string gameFolder = new System.IO.DirectoryInfo(installPath).Name;
+                        string gameFolder = new DirectoryInfo(installPath).Name;
 
                         // Look for appmanifest files in the steamapps directory
-                        string manifestsDir = System.IO.Path.Combine(steamPath, "steamapps");
-                        if (System.IO.Directory.Exists(manifestsDir))
+                        string manifestsDir = Path.Combine(steamPath, "steamapps");
+                        if (Directory.Exists(manifestsDir))
                         {
-                            var manifestFiles = System.IO.Directory.GetFiles(manifestsDir, "appmanifest_*.acf");
+                            var manifestFiles = Directory.GetFiles(manifestsDir, "appmanifest_*.acf");
                             foreach (var manifestFile in manifestFiles)
                             {
                                 // Read the manifest file
-                                string content = System.IO.File.ReadAllText(manifestFile);
+                                string content = File.ReadAllText(manifestFile);
 
                                 // Check if this manifest is for our game
                                 if (content.Contains($"\"installdir\"\t\t\"{gameFolder}\"") ||
@@ -266,7 +274,7 @@ namespace GameCenter.Helpers
                 // If we still don't have an AppID, try to extract from the executable path
                 if (appId == 0 && !string.IsNullOrEmpty(Game.ExecutablePath))
                 {
-                    var fileNameMatch = Regex.Match(System.IO.Path.GetFileName(Game.ExecutablePath), @"(\d+)");
+                    var fileNameMatch = Regex.Match(Path.GetFileName(Game.ExecutablePath), @"(\d+)");
                     if (fileNameMatch.Success)
                     {
                         if (uint.TryParse(fileNameMatch.Groups[1].Value, out uint extractedId))
@@ -283,7 +291,7 @@ namespace GameCenter.Helpers
                 // Use the steam:// protocol to launch the game
                 await Launcher.LaunchUriAsync(new Uri($"steam://run/{appId}"));
             }
-            else if (!string.IsNullOrEmpty(Game.ExecutablePath) && System.IO.File.Exists(Game.ExecutablePath))
+            else if (!string.IsNullOrEmpty(Game.ExecutablePath) && File.Exists(Game.ExecutablePath))
             {
                 // Fallback to launching the executable directly
                 await LaunchExecutable();
@@ -301,7 +309,7 @@ namespace GameCenter.Helpers
             {
                 await Launcher.LaunchUriAsync(new Uri(Game.LaunchUri));
             }
-            else if (!string.IsNullOrEmpty(Game.ExecutablePath) && System.IO.File.Exists(Game.ExecutablePath))
+            else if (!string.IsNullOrEmpty(Game.ExecutablePath) && File.Exists(Game.ExecutablePath))
             {
                 // Fallback to launching the executable directly
                 await LaunchExecutable();
@@ -319,7 +327,7 @@ namespace GameCenter.Helpers
             {
                 await Launcher.LaunchUriAsync(new Uri(Game.LaunchUri));
             }
-            else if (!string.IsNullOrEmpty(Game.ExecutablePath) && System.IO.File.Exists(Game.ExecutablePath))
+            else if (!string.IsNullOrEmpty(Game.ExecutablePath) && File.Exists(Game.ExecutablePath))
             {
                 // Fallback to launching the executable directly
                 await LaunchExecutable();
@@ -332,7 +340,7 @@ namespace GameCenter.Helpers
 
         private async Task LaunchExecutable()
         {
-            if (string.IsNullOrEmpty(Game.ExecutablePath) || !System.IO.File.Exists(Game.ExecutablePath))
+            if (string.IsNullOrEmpty(Game.ExecutablePath) || !File.Exists(Game.ExecutablePath))
             {
                 throw new Exception("Game executable not found.");
             }
@@ -342,6 +350,220 @@ namespace GameCenter.Helpers
             var file = await Windows.Storage.StorageFile.GetFileFromPathAsync(Game.ExecutablePath);
             await Launcher.LaunchFileAsync(file, options);
         }
+
+        private void InfoButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Show game info popup
+            ShowGameInfoPopup();
+        }
+
+        private Popup _gameInfoPopup;
+
+        private void ShowGameInfoPopup()
+        {
+            // Create the popup if it doesn't exist
+            if (_gameInfoPopup == null)
+            {
+                CreateGameInfoPopup();
+            }
+
+            // Position the popup near the info button
+            var infoButtonTransform = InfoButton.TransformToVisual(null);
+            var infoButtonPosition = infoButtonTransform.TransformPoint(new Windows.Foundation.Point(0, 0));
+
+            // Position the popup to the right of the info button
+            _gameInfoPopup.HorizontalOffset = infoButtonPosition.X - 400 + InfoButton.ActualWidth;
+            _gameInfoPopup.VerticalOffset = infoButtonPosition.Y + InfoButton.ActualHeight;
+
+            // Show the popup
+            _gameInfoPopup.IsOpen = true;
+        }
+
+        private void CreateGameInfoPopup()
+        {
+            // Create the popup first
+            _gameInfoPopup = new Popup
+            {
+                IsLightDismissEnabled = true
+            };
+
+            // Set the XamlRoot property - this is crucial for WinUI 3
+            _gameInfoPopup.XamlRoot = this.XamlRoot;
+
+            // Create the content
+            var grid = new Grid
+            {
+                Background = Application.Current.Resources["ApplicationPageBackgroundThemeBrush"] as Brush,
+                BorderBrush = Application.Current.Resources["CardStrokeColorDefaultBrush"] as Brush,
+                BorderThickness = new Thickness(1),
+                CornerRadius = new CornerRadius(8),
+                Padding = new Thickness(24),
+                Width = 400,
+                MaxHeight = 600
+            };
+
+            // Add shadow
+            grid.Shadow = new ThemeShadow();
+
+            // Create rows
+            var headerRow = new RowDefinition { Height = GridLength.Auto };
+            var contentRow = new RowDefinition { Height = new GridLength(1, GridUnitType.Star) };
+            grid.RowDefinitions.Add(headerRow);
+            grid.RowDefinitions.Add(contentRow);
+
+            // Create header
+            var headerGrid = new Grid();
+            var headerText = new TextBlock
+            {
+                Text = "Game Information",
+                FontSize = 20,
+                FontWeight = FontWeights.SemiBold
+            };
+
+            var closeButton = new Button
+            {
+                HorizontalAlignment = HorizontalAlignment.Right,
+                Background = new SolidColorBrush(Colors.Transparent),
+                BorderThickness = new Thickness(0)
+            };
+            closeButton.Click += ClosePopup_Click;
+
+            var closeIcon = new FontIcon
+            {
+                FontFamily = new FontFamily("Segoe MDL2 Assets"),
+                Glyph = "\uE8BB"
+            };
+            closeButton.Content = closeIcon;
+
+            headerGrid.Children.Add(headerText);
+            headerGrid.Children.Add(closeButton);
+            Grid.SetRow(headerGrid, 0);
+            grid.Children.Add(headerGrid);
+
+            // Create content
+            var scrollViewer = new ScrollViewer
+            {
+                Margin = new Thickness(0, 16, 0, 0),
+                VerticalScrollBarVisibility = ScrollBarVisibility.Auto
+            };
+            Grid.SetRow(scrollViewer, 1);
+
+            var contentStack = new StackPanel();
+
+            // Add game details
+            AddGameDetailItem(contentStack, "App ID", Game.AppId.ToString());
+            AddGameDetailItem(contentStack, "Install Location", Game.InstallLocation);
+            AddGameDetailItem(contentStack, "Executable", Game.ExecutablePath);
+
+            if (!string.IsNullOrEmpty(Game.Developer))
+                AddGameDetailItem(contentStack, "Developer", Game.Developer);
+
+            if (!string.IsNullOrEmpty(Game.Publisher))
+                AddGameDetailItem(contentStack, "Publisher", Game.Publisher);
+
+            if (!string.IsNullOrEmpty(Game.ReleaseDate))
+                AddGameDetailItem(contentStack, "Release Date", Game.ReleaseDate);
+
+            if (!string.IsNullOrEmpty(Game.Genres))
+                AddGameDetailItem(contentStack, "Genres", Game.Genres);
+
+            if (!string.IsNullOrEmpty(Game.LaunchUri))
+                AddGameDetailItem(contentStack, "Launch URI", Game.LaunchUri);
+
+            AddGameDetailItem(contentStack, "Last Played",
+                _dateTimeConverter.Convert(Game.LastPlayed, typeof(string), null, null) as string);
+
+            AddGameDetailItem(contentStack, "Play Time",
+                FormatPlayTime(Game.PlayTime));
+
+            if (!string.IsNullOrEmpty(Game.Description))
+                AddGameDetailItem(contentStack, "Description", Game.Description);
+
+            scrollViewer.Content = contentStack;
+            grid.Children.Add(scrollViewer);
+
+            // Set the popup content
+            _gameInfoPopup.Child = grid;
+        }
+
+        private void ClosePopup_Click(object sender, RoutedEventArgs e)
+        {
+            if (_gameInfoPopup != null)
+            {
+                _gameInfoPopup.IsOpen = false;
+            }
+        }
+
+        private void AddGameDetailItem(StackPanel parent, string label, string value)
+        {
+            if (string.IsNullOrEmpty(value))
+                return;
+
+            var itemStack = new StackPanel
+            {
+                Margin = new Thickness(0, 8, 0, 0)
+            };
+
+            var labelText = new TextBlock
+            {
+                Text = label,
+                Foreground = Application.Current.Resources["TextFillColorSecondaryBrush"] as Brush,
+                FontSize = 12,
+                FontWeight = FontWeights.SemiBold
+            };
+
+            var valueText = new TextBlock
+            {
+                Text = value,
+                Foreground = Application.Current.Resources["TextFillColorPrimaryBrush"] as Brush,
+                FontSize = 14,
+                TextWrapping = TextWrapping.Wrap
+            };
+
+            itemStack.Children.Add(labelText);
+            itemStack.Children.Add(valueText);
+            parent.Children.Add(itemStack);
+        }
+
+   
+        private string FormatPlayTime(int minutes)
+        {
+            if (minutes < 60)
+            {
+                return $"{minutes} minutes played";
+            }
+            else
+            {
+                int hours = minutes / 60;
+                int remainingMinutes = minutes % 60;
+
+                if (remainingMinutes == 0)
+                {
+                    return $"{hours} {(hours == 1 ? "hour" : "hours")} played";
+                }
+                else
+                {
+                    return $"{hours} {(hours == 1 ? "hour" : "hours")} {remainingMinutes} {(remainingMinutes == 1 ? "minute" : "minutes")} played";
+                }
+            }
+        }
+
+        // Method to refresh game metadata if needed
+        public async Task RefreshGameMetadataAsync()
+        {
+            if (Game == null)
+                return;
+
+            // If it's a Steam game, refresh the metadata
+            if (Game.Launcher?.ToLower() == "steam" && Game.AppId > 0)
+            {
+                await _gameScanner.RefreshSteamMetadataAsync(Game);
+
+                // Update the UI
+                UpdateGameImage(Game);
+                UpdateVisibility(Game);
+                UpdateLastPlayed(Game);             
+            }
+        }
     }
 }
-

@@ -104,37 +104,166 @@
                 </Button>
 
                 <Button x:Name="NetworkButton" 
-                        Background="Transparent" 
-                        BorderBrush="Transparent"
-                        BorderThickness="0"
-                        Padding="0"
-                        Width="32"
-                        Height="32"
-                        CornerRadius="0"
-                       >
-                    <FontIcon x:Name="NetworkIcon" Glyph="&#xE701;" FontSize="16"/>
+        Background="{ThemeResource CardBackgroundFillColorDefaultBrush}" 
+        BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+        BorderThickness="1"
+        Padding="0"
+        Width="32"
+        Height="32"
+        CornerRadius="20"
+        HorizontalAlignment="Right"
+        VerticalAlignment="Top"
+        Margin="0,8,0,0">
+                    <Button.Shadow>
+                        <ThemeShadow />
+                    </Button.Shadow>
+                    <Grid>
+                        <FontIcon x:Name="NetworkIcon" 
+                  Glyph="&#xE701;" 
+                  FontSize="16" 
+                  Foreground="{ThemeResource TextFillColorPrimaryBrush}"/>
+                    </Grid>
                     <Button.Flyout>
                         <Flyout x:Name="NetworkFlyout" Placement="Bottom">
                             <Flyout.FlyoutPresenterStyle>
-                                <Style TargetType="FlyoutPresenter" BasedOn="{StaticResource AnimatedFlyoutPresenterStyle}">
-                                    <Setter Property="CornerRadius" Value="10"/>
+                                <Style TargetType="FlyoutPresenter">
+                                    <Setter Property="CornerRadius" Value="12"/>
+                                    <Setter Property="Background" Value="{ThemeResource CardBackgroundFillColorDefaultBrush}"/>
+                                    <Setter Property="BorderThickness" Value="1"/>
+                                    <Setter Property="Padding" Value="20"/>
+                                    <Setter Property="MinWidth" Value="320"/>
                                 </Style>
                             </Flyout.FlyoutPresenterStyle>
-                            <StackPanel Width="300">
-                                <TextBlock x:Name="DeviceNameText" Style="{ThemeResource BodyTextBlockStyle}"/>
-                                <TextBlock x:Name="IpAddressText" Style="{ThemeResource BodyTextBlockStyle}" Margin="0,4,0,0"/>
-                                <Grid x:Name="SpeedGraph" Height="100" Margin="0,16,0,0">
-                                    <Rectangle Fill="{ThemeResource SystemControlBackgroundAltHighBrush}" />
-                                    <Polyline x:Name="UploadSpeedLine" Stroke="Green" StrokeThickness="2"/>
-                                    <Polyline x:Name="DownloadSpeedLine" Stroke="Blue" StrokeThickness="2"/>
-                                </Grid>
-                                <StackPanel Orientation="Horizontal" Margin="0,8,0,0">
-                                    <TextBlock Text="Upload: " Style="{ThemeResource CaptionTextBlockStyle}"/>
-                                    <TextBlock x:Name="UploadSpeedText" Style="{ThemeResource CaptionTextBlockStyle}"/>
-                                    <TextBlock Text="Download: " Style="{ThemeResource CaptionTextBlockStyle}" Margin="16,0,0,0"/>
-                                    <TextBlock x:Name="DownloadSpeedText" Style="{ThemeResource CaptionTextBlockStyle}"/>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+
+                                <!-- Header with device info -->
+                                <StackPanel Grid.Row="0" Margin="0,0,0,16">
+                                    <TextBlock Text="Network Information" 
+                               FontWeight="SemiBold" 
+                               FontSize="16" 
+                               Margin="0,0,0,12"/>
+
+                                    <Grid Margin="0,4,0,4">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <FontIcon Glyph="&#xE77E;" 
+                                  FontSize="14" 
+                                  Margin="0,0,12,0" 
+                                  VerticalAlignment="Center"
+                                  Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>
+                                        <TextBlock x:Name="DeviceNameText" 
+                                   Grid.Column="1" 
+                                   Style="{ThemeResource BodyTextBlockStyle}"/>
+                                    </Grid>
+
+                                    <Grid Margin="0,4,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <FontIcon Glyph="&#xE968;" 
+                                  FontSize="14" 
+                                  Margin="0,0,12,0" 
+                                  VerticalAlignment="Center"
+                                  Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>
+                                        <TextBlock x:Name="IpAddressText" 
+                                   Grid.Column="1" 
+                                   Style="{ThemeResource BodyTextBlockStyle}"/>
+                                    </Grid>
                                 </StackPanel>
-                            </StackPanel>
+
+                                <!-- Speed Graph -->
+                                <Border Grid.Row="1" 
+                        Background="{ThemeResource LayerFillColorDefaultBrush}" 
+                        CornerRadius="8" 
+                        BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" 
+                        BorderThickness="1" 
+                        Padding="1">
+                                    <Grid x:Name="SpeedGraph" Height="120" Margin="8">
+                                        <!-- Graph background with grid lines -->
+                                        <Rectangle Fill="{ThemeResource LayerFillColorDefaultBrush}" />
+
+                                        <!-- Horizontal grid lines -->
+                                        <Line X1="0" Y1="30" X2="300" Y2="30" 
+                              Stroke="{ThemeResource CardStrokeColorDefaultBrush}" 
+                              StrokeThickness="0.5" 
+                              Opacity="0.5" 
+                              StrokeDashArray="4,2"/>
+                                        <Line X1="0" Y1="60" X2="300" Y2="60" 
+                              Stroke="{ThemeResource CardStrokeColorDefaultBrush}" 
+                              StrokeThickness="0.5" 
+                              Opacity="0.5" 
+                              StrokeDashArray="4,2"/>
+                                        <Line X1="0" Y1="90" X2="300" Y2="90" 
+                              Stroke="{ThemeResource CardStrokeColorDefaultBrush}" 
+                              StrokeThickness="0.5" 
+                              Opacity="0.5" 
+                              StrokeDashArray="4,2"/>
+
+                                        <!-- Speed lines -->
+                                        <Polyline x:Name="DownloadSpeedLine" 
+                                  Stroke="#0078D7" 
+                                  StrokeThickness="2"/>
+                                        <Polyline x:Name="UploadSpeedLine" 
+                                  Stroke="#10893E" 
+                                  StrokeThickness="2"/>
+                                    </Grid>
+                                </Border>
+
+                                <!-- Legend -->
+                                <Grid Grid.Row="2" Margin="0,12,0,0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <!-- Download -->
+                                    <StackPanel Grid.Column="0" 
+                                Orientation="Horizontal" 
+                                HorizontalAlignment="Center" 
+                                VerticalAlignment="Center">
+                                        <Rectangle Width="12" 
+                                   Height="12" 
+                                   Fill="#0078D7" 
+                                   Margin="0,0,8,0" 
+                                   VerticalAlignment="Center"/>
+                                        <TextBlock Text="Download: " 
+                                   Style="{ThemeResource CaptionTextBlockStyle}" 
+                                   VerticalAlignment="Center"/>
+                                        <TextBlock x:Name="DownloadSpeedText" 
+                                   Style="{ThemeResource CaptionTextBlockStyle}" 
+                                   FontWeight="SemiBold" 
+                                   VerticalAlignment="Center"/>
+                                    </StackPanel>
+
+                                    <!-- Upload -->
+                                    <StackPanel Grid.Column="1" 
+                                Orientation="Horizontal" 
+                                HorizontalAlignment="Center" 
+                                VerticalAlignment="Center">
+                                        <Rectangle Width="12" 
+                                   Height="12" 
+                                   Fill="#10893E" 
+                                   Margin="0,0,8,0" 
+                                   VerticalAlignment="Center"/>
+                                        <TextBlock Text="Upload: " 
+                                   Style="{ThemeResource CaptionTextBlockStyle}" 
+                                   VerticalAlignment="Center"/>
+                                        <TextBlock x:Name="UploadSpeedText" 
+                                   Style="{ThemeResource CaptionTextBlockStyle}" 
+                                   FontWeight="SemiBold" 
+                                   VerticalAlignment="Center"/>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
                         </Flyout>
                     </Button.Flyout>
                 </Button>

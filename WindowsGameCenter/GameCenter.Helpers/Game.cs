@@ -37,7 +37,7 @@ namespace GameCenter.Helpers
         public string Publisher { get; set; }
         public string Developer { get; set; }
         public string ReleaseDate { get; set; }
-        public string Genre { get; set; }
+        public string Genres { get; set; }
         public int PlayTime { get; set; }
         public GamePlatform Platform { get; set; }
 

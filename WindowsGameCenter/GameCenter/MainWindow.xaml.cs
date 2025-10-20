@@ -68,7 +68,7 @@ namespace GameCenter
             // Set up timer for updating the time display
             _timer = new DispatcherTimer();
             _timer.Tick += Timer_Tick;
-            _timer.Interval = TimeSpan.FromSeconds(1);
+            _timer.Interval = TimeSpan.FromSeconds(2);
             _timer.Start();
 
             // Initial time update
@@ -315,10 +315,7 @@ namespace GameCenter
             CurrentTime = DateTime.Now.ToString("HH:mm:ss");
         }
 
-        private void NetworkButton_Click(object sender, RoutedEventArgs e)
-        {
-        }
-
+  
         private void AudioSourceComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (AudioSourceComboBox.SelectedItem is AudioDevice selectedDevice)

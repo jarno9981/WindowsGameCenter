@@ -881,7 +881,7 @@ namespace GameCenter.GameCenter_XamlTypeInfo
                 userType.AddMemberName("Publisher");
                 userType.AddMemberName("Developer");
                 userType.AddMemberName("ReleaseDate");
-                userType.AddMemberName("Genre");
+                userType.AddMemberName("Genres");
                 userType.AddMemberName("PlayTime");
                 userType.AddMemberName("Platform");
                 userType.AddMemberName("ImageSource");
@@ -2031,15 +2031,15 @@ namespace GameCenter.GameCenter_XamlTypeInfo
             var that = (global::GameCenter.Helpers.Game)instance;
             that.ReleaseDate = (global::System.String)Value;
         }
-        private object get_42_Game_Genre(object instance)
+        private object get_42_Game_Genres(object instance)
         {
             var that = (global::GameCenter.Helpers.Game)instance;
-            return that.Genre;
+            return that.Genres;
         }
-        private void set_42_Game_Genre(object instance, object Value)
+        private void set_42_Game_Genres(object instance, object Value)
         {
             var that = (global::GameCenter.Helpers.Game)instance;
-            that.Genre = (global::System.String)Value;
+            that.Genres = (global::System.String)Value;
         }
         private object get_43_Game_PlayTime(object instance)
         {
@@ -3532,11 +3532,11 @@ namespace GameCenter.GameCenter_XamlTypeInfo
                 xamlMember.Getter = get_41_Game_ReleaseDate;
                 xamlMember.Setter = set_41_Game_ReleaseDate;
                 break;
-            case "GameCenter.Helpers.Game.Genre":
+            case "GameCenter.Helpers.Game.Genres":
                 userType = (global::GameCenter.GameCenter_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GameCenter.Helpers.Game");
-                xamlMember = new global::GameCenter.GameCenter_XamlTypeInfo.XamlMember(this, "Genre", "String");
-                xamlMember.Getter = get_42_Game_Genre;
-                xamlMember.Setter = set_42_Game_Genre;
+                xamlMember = new global::GameCenter.GameCenter_XamlTypeInfo.XamlMember(this, "Genres", "String");
+                xamlMember.Getter = get_42_Game_Genres;
+                xamlMember.Setter = set_42_Game_Genres;
                 break;
             case "GameCenter.Helpers.Game.PlayTime":
                 userType = (global::GameCenter.GameCenter_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GameCenter.Helpers.Game");
